@@ -22,6 +22,9 @@ import {
   easeInOutCubic,
   easeOutCubic,
   getScene,
+  sceneLen,
+  wEnd,
+  wStart,
   msToFrame,
   progressBetween,
   toBn,
@@ -48,6 +51,10 @@ import {
 
 /** মিলিসেকেন্ড → সিনের লোকাল ফ্রেম */
 const lf = (ms: number, id: SceneId): number => msToFrame(ms) - getScene(id).from;
+/** সিনের শেষ-প্রস্থানের ফ্রেম (লোকাল): শব্দ শেষ − margin; কিন্তু সিনের মধ্যেই প্রস্থান (৮ ফ্রেম) শেষ হতে হবে */
+const endLf = (ms: number, id: SceneId, margin: number): number =>
+  Math.min(lf(ms, id) - margin, sceneLen(id) - 9);
+
 
 /** Layout A এর ইনফোগ্রাফিক জোন (মুখের ওপরে) */
 const INFO = ZONES.info;
@@ -247,15 +254,15 @@ const SummaryRow: React.FC<{
  */
 export const Scene9: React.FC = () => {
   const frame = useCurrentFrame();
-  const firstAt = lf(54500, 'S9') + 3; // "চারটি" ≈ ১৮ → ২১
+  const firstAt = lf(wStart(90), 'S9') + 3; // "চারটি"
   const interval = 30; // ১.২s
   const rowAt = (i: number): number => firstAt + i * interval; // ২১, ৫১, ৮১, ১১১
   const tickAt = (i: number): number => rowAt(i) + 8;
-  const allDoneAt = tickAt(3) + 10; // ≈ ১২৯
-  const titleAAt = lf(54000, 'S9') - 2; // "এই" ≈ ৩
-  const titleAOut = lf(56000, 'S9') - 11; // ≈ ৪৪ (৫২ এ সম্পূর্ণ অদৃশ্য)
-  const titleBAt = lf(56000, 'S9') - 2; // "ইস্তেঞ্জার" ≈ ৫৩
-  const endAt = lf(60955, 'S9') - 8; // "সুন্নাহ" শেষ ≈ ১৭৯ → ১৭১
+  const allDoneAt = tickAt(3) + 10;
+  const titleAAt = Math.max(0, lf(wStart(89), 'S9') - 2); // "এই"
+  const titleAOut = lf(wStart(92), 'S9') - 11; // শিরোনাম-ক সরে (৮ ফ্রেমে অদৃশ্য)
+  const titleBAt = lf(wStart(92), 'S9') - 2; // "ইস্তেঞ্জার"
+  const endAt = endLf(wEnd(100), 'S9', 8); // "সুন্নাহ" শেষ
   const rowsLeft = SUM_LEFT_W + SUM_GAP;
   // বাঁ কলাম ও ডান তালিকার মাঝের সরু দাগ — আঁকা হয়
   const rule = easeOutCubic(progressBetween(frame, 4, 24));
@@ -442,12 +449,12 @@ export const Scene10: React.FC = () => {
   const gridTop = area.from + headerH;
   const gridLeft = Math.round((WIDTH - G_SIZE) / 2);
 
-  const sixteenAt = lf(KEY_MS.remainStart, 'S10'); // ≈ ৫
-  const knownAt = lf(63636, 'S10') - 2; // "অন্যতম" ≈ ৪৬ → ৪৪
-  const remainAt = lf(65272, 'S10') - 2; // "বাকি" ≈ ৮৭ → ৮৫
-  const emphasisAt = lf(66363, 'S10') - 2; // "আর" ≈ ১১৪ → ১১২
-  const eightWordAt = lf(66909, 'S10'); // "আটটি" ≈ ১২৮
-  const endAt = lf(67956, 'S10') - 4; // "সুন্নাহ" শেষ ≈ ১৫৪ → ১৫০
+  const sixteenAt = lf(KEY_MS.remainStart, 'S10');
+  const knownAt = lf(wStart(104), 'S10') - 2; // "অন্যতম"
+  const remainAt = lf(wStart(107), 'S10') - 2; // "বাকি"
+  const emphasisAt = lf(wStart(109), 'S10') - 2; // "আর"
+  const eightWordAt = lf(wStart(110), 'S10'); // "আটটি"
+  const endAt = endLf(wEnd(111), 'S10', 4); // "সুন্নাহ" শেষ
 
   const rowY = (row: number): number => gridTop + row * (G_CELL + G_GAP) + G_CELL / 2;
   const chipH = 80;
@@ -567,11 +574,11 @@ const BurstRings: React.FC<{at: number; cx: number; cy: number}> = ({at, cx, cy}
  * ৭৪.৯২s সালাম (১ম অংশ)    → শান্ত বিদায়ী-ফেড (ধীরে মিলায়, সামান্য ওপরে ওঠে); কণা ধীরে ঝিমিয়ে যায়
  */
 export const Scene11: React.FC = () => {
-  const partsAt = lf(KEY_MS.partsStart, 'S11') - 2; // "পর্ব" ≈ ৩
-  const baakiAt = lf(70076, 'S11') - 2; // "বাকি" ≈ ৩০
-  const phase1Out = lf(72726, 'S11') - 8; // "জন্য" শেষ ≈ ৯৮ → ৯০
-  const mdmkAt = lf(KEY_MS.mdmkWord, 'S11') - 2; // "MDMK" ≈ ৯৯ → ৯৭
-  const calmAt = lf(KEY_MS.salamEndStart, 'S11'); // ≈ ১৫৩ — বিদায়ী-ফেড শুরু
+  const partsAt = lf(KEY_MS.partsStart, 'S11') - 2;
+  const baakiAt = lf(wStart(114), 'S11') - 2; // "বাকি"
+  const phase1Out = lf(wEnd(118), 'S11') - 8; // "জন্য" শেষ
+  const mdmkAt = lf(KEY_MS.mdmkWord, 'S11') - 2; // "MDMK"
+  const calmAt = lf(KEY_MS.salamEndStart, 'S11'); // বিদায়ী-ফেড শুরু
   const calmDur = 28;
   const sceneEnd = getScene('S11').to - getScene('S11').from; // ১৯০
 
@@ -644,8 +651,8 @@ export const Scene11: React.FC = () => {
 export const Scene12: React.FC = () => {
   const frame = useCurrentFrame();
   const sceneEnd = getScene('S12').to - getScene('S12').from; // ৫৫
-  const titleAt = lf(78000, 'S12') - 2; // ≈ ৩
-  const titleOut = lf(79470, 'S12') - 2; // ≈ ৪০
+  const titleAt = Math.max(0, lf(wStart(125), 'S12') - 2); // "ওয়া"
+  const titleOut = Math.min(lf(wEnd(128), 'S12') - 2, sceneEnd - 18); // শেষ শব্দ শেষ
   const darkFrom = sceneEnd - 12; // শেষ ০.৪৮s
   const dark = easeInOutCubic(progressBetween(frame, darkFrom, sceneEnd - 1));
 
@@ -675,7 +682,7 @@ export const Scene12: React.FC = () => {
           gradient={[COLORS.gold, COLORS.teal]}
           underlineColor={COLORS.gold}
           delay={titleAt}
-          stagger={9}
+          stagger={Math.max(5, Math.round(msToFrame(wStart(128) - wStart(125)) / 3))}
           maxWidth={960}
           exitAt={titleOut}
         />

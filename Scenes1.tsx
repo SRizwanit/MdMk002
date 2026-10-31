@@ -21,6 +21,9 @@ import {
   ZONES,
   easeInOutCubic,
   getScene,
+  sceneLen,
+  wEnd,
+  wStart,
   msToFrame,
   progressBetween,
   toBn,
@@ -45,6 +48,10 @@ import {
 
 /** মিলিসেকেন্ড → সিনের লোকাল ফ্রেম */
 const lf = (ms: number, id: SceneId): number => msToFrame(ms) - getScene(id).from;
+/** সিনের শেষ-প্রস্থানের ফ্রেম (লোকাল): শব্দ শেষ − margin; কিন্তু সিনের মধ্যেই প্রস্থান (৮ ফ্রেম) শেষ হতে হবে */
+const endLf = (ms: number, id: SceneId, margin: number): number =>
+  Math.min(lf(ms, id) - margin, sceneLen(id) - 9);
+
 
 /** Layout A এর ইনফোগ্রাফিক জোন (মুখের ওপরে) */
 const INFO = ZONES.info;
@@ -120,10 +127,12 @@ const Chip: React.FC<{text: string; color: string; fontSize?: number}> = ({
  * চারপাশে স্বর্ণালী তারা-কণা। ক্যাপশন আলাদা (Captions.tsx) চলছে।
  */
 export const Scene1: React.FC = () => {
-  const exitAt = 46;
+  const salamAt = lf(wStart(0), 'S1'); // "আসসালামু" শুরু
+  const salamGap = msToFrame(wStart(1) - wStart(0)); // দুই শব্দের ব্যবধান (ফ্রেম)
+  const exitAt = lf(wEnd(1), 'S1') - 6; // "আলাইকুম" শেষের একটু আগে প্রস্থান
   return (
     <AbsoluteFill>
-      <Fade outAt={50}>
+      <Fade outAt={exitAt + 4}>
         <Particles
           count={26}
           seed={11}
@@ -141,8 +150,8 @@ export const Scene1: React.FC = () => {
           fontSize={98}
           gradient={[COLORS.gold, COLORS.teal]}
           underlineColor={COLORS.gold}
-          delay={2}
-          stagger={17}
+          delay={salamAt - 1}
+          stagger={salamGap}
           maxWidth={980}
           exitAt={exitAt}
         />
@@ -162,10 +171,12 @@ export const Scene1: React.FC = () => {
  */
 export const Scene2: React.FC = () => {
   const frame = useCurrentFrame();
-  const titleExit = 52;
-  const ringAt = lf(5100, 'S2'); // ≈ ৫৬
-  const cardAt = lf(6571, 'S2'); // "আমরা" ≈ ৯৪ → কার্ড একটু আগে
-  const endAt = lf(7942, 'S2') - 2; // "জেনেছি" শেষ ≈ ১২৬
+  const titleAt = Math.max(0, lf(wStart(2), 'S2') - 1); // "প্রিয়"
+  const titleStagger = Math.max(6, Math.round(msToFrame(wStart(4) - wStart(2)) / 2)); // প্রিয়→দর্শক→শ্রোতা ব্যবধান
+  const titleExit = lf(wEnd(4), 'S2') - 1; // "শ্রোতা" শেষে শিরোনাম প্রস্থান
+  const ringAt = lf(wStart(6), 'S2'); // "ভিডিওতে" থেকে রিং ভরে (শিরোনাম সরার পরে)
+  const cardAt = lf(wStart(7), 'S2') - 4; // "আমরা" — কার্ড একটু আগে
+  const endAt = endLf(wEnd(8), 'S2', 2); // "জেনেছি" শেষ
   const tick = progressBetween(frame, cardAt + 12, cardAt + 28);
 
   return (
@@ -190,8 +201,8 @@ export const Scene2: React.FC = () => {
           fontSize={92}
           gradient={[COLORS.sky, COLORS.teal]}
           underlineColor={COLORS.sky}
-          delay={5}
-          stagger={18}
+          delay={titleAt}
+          stagger={titleStagger}
           maxWidth={980}
           exitAt={titleExit}
         />
@@ -250,12 +261,13 @@ export const Scene3: React.FC = () => {
   const gridTop = area.from + headerH;
   const gridLeft = Math.round((WIDTH - GRID_SIZE) / 2);
 
-  const sixteenAt = lf(9000, 'S3'); // ≈ ৫
-  const knownAt = lf(11000, 'S3'); // ≈ ৫৫
-  const todayAt = lf(13000, 'S3'); // ≈ ১০৫
-  const remainAt = lf(10000, 'S3'); // "এর" ≈ ৩০ → ধূসর ৮ ঘর
-  const titleAt = lf(16000, 'S3'); // ≈ ১৮০
-  const endAt = lf(16960, 'S3') + 2; // "সুন্নাহ" শেষ ≈ ২০৬
+  const sixteenAt = lf(wStart(9), 'S3'); // "ষোলোটি"
+  const knownAt = lf(wStart(13), 'S3'); // "চারটি জেনেছি"
+  const todayAt = lf(wStart(17), 'S3'); // "পরবর্তী চারটি জানবো"
+  const remainAt = lf(wStart(11), 'S3'); // "এর" → ধূসর ৮ ঘর
+  const titleAt = lf(wStart(23), 'S3'); // "ইস্তেঞ্জার"
+  // "সুন্নাহ" শেষের পরে নীরবতা (≈১.৮s) জুড়ে শিরোনাম থাকে; পরের সিন শুরুর আগেই প্রস্থান
+  const endAt = Math.min(lf(wEnd(24), 'S3') + 24, sceneLen('S3') - 9);
 
   const rowY = (row: number): number => gridTop + row * (GRID_CELL + GRID_GAP) + GRID_CELL / 2;
   const chipH = 70;
@@ -442,8 +454,8 @@ const StepDots: React.FC<{delay: number; litAt: number; exitAt?: number}> = ({
  * ১৯.৭৫s "এক নাম্বার" এ ডট ১ জ্বলে — পরের সিনে (S5) NumberBadge ১ ঢোকার প্রস্তুতি।
  */
 export const Scene4: React.FC = () => {
-  const oneAt = lf(KEY_MS.oneNumber, 'S4'); // ≈ ৪৯
-  const endAt = lf(21453, 'S4') - 2; // "হলো" শেষ ≈ ৮৯
+  const oneAt = lf(KEY_MS.oneNumber, 'S4'); // "এক"
+  const endAt = endLf(wEnd(30), 'S4', 2); // "হলো" শেষ
   const titleH = 150;
 
   return (
@@ -475,7 +487,7 @@ export const Scene4: React.FC = () => {
       </Zone>
 
       <Zone top={INFO.from - 8 + titleH + 8} height={DOT + 30}>
-        <StepDots delay={20} litAt={oneAt} exitAt={endAt} />
+        <StepDots delay={Math.min(20, Math.max(6, oneAt - 18))} litAt={oneAt} exitAt={endAt} />
       </Zone>
     </AbsoluteFill>
   );

@@ -30,6 +30,9 @@ import {
   ZONES,
   easeOutCubic,
   getScene,
+  sceneLen,
+  wEnd,
+  wStart,
   msToFrame,
   progressBetween,
   type SceneId,
@@ -55,6 +58,10 @@ import {
 
 /** মিলিসেকেন্ড → সিনের লোকাল ফ্রেম */
 const lf = (ms: number, id: SceneId): number => msToFrame(ms) - getScene(id).from;
+/** সিনের শেষ-প্রস্থানের ফ্রেম (লোকাল): শব্দ শেষ − margin; কিন্তু সিনের মধ্যেই প্রস্থান (৮ ফ্রেম) শেষ হতে হবে */
+const endLf = (ms: number, id: SceneId, margin: number): number =>
+  Math.min(lf(ms, id) - margin, sceneLen(id) - 9);
+
 
 /** Layout A এর ইনফোগ্রাফিক জোন (মুখের ওপরে) */
 const INFO = ZONES.info;
@@ -156,10 +163,10 @@ const NoChip: React.FC<{text: string; delay: number; crossAt: number; exitAt: nu
  */
 export const Scene5: React.FC = () => {
   const frame = useCurrentFrame();
-  const qiblaAt = lf(KEY_MS.p1Start, 'S5'); // ≈ ২
-  const faceAt = lf(KEY_MS.p1Face, 'S5'); // ≈ ২৫
-  const backAt = lf(KEY_MS.p1Back, 'S5'); // ≈ ৬০
-  const endAt = lf(26162, 'S5') - 8; // "বসা" শেষ ≈ ১০৬ → ৯৮
+  const qiblaAt = lf(KEY_MS.p1Start, 'S5');
+  const faceAt = lf(KEY_MS.p1Face, 'S5');
+  const backAt = lf(KEY_MS.p1Back, 'S5');
+  const endAt = endLf(wEnd(39), 'S5', 8); // "বসা" শেষ
   const compass = progressBetween(frame, qiblaAt + 6, qiblaAt + 30);
 
   return (
@@ -288,10 +295,10 @@ const SubRow: React.FC<{
  * তিনটি সারি জায়গা নির্দিষ্ট; একটার পর একটা যোগ হয়, আগেরগুলো থাকে।
  */
 export const Scene6: React.FC = () => {
-  const aAt = lf(KEY_MS.p2aStart, 'S6') - 2; // ≈ ৩৩
-  const bAt = lf(KEY_MS.p2bStart, 'S6') - 2; // ≈ ১১৫
-  const cAt = lf(KEY_MS.p2cStart, 'S6') - 2; // ≈ ১৬১
-  const endAt = lf(34562, 'S6') - 10; // "করা" শেষ ≈ ২০৯ → ১৯৯ (২০৭ এ S7 শুরু)
+  const aAt = lf(KEY_MS.p2aStart, 'S6') - 2;
+  const bAt = lf(KEY_MS.p2bStart, 'S6') - 2;
+  const cAt = lf(KEY_MS.p2cStart, 'S6') - 2;
+  const endAt = endLf(wEnd(57), 'S6', 10); // "করা" শেষ
 
   return (
     <AbsoluteFill>
@@ -393,10 +400,10 @@ const GlintShield: React.FC<{delay: number; glintAt: number; exitAt: number; siz
  */
 export const Scene7: React.FC = () => {
   const frame = useCurrentFrame();
-  const badgeAt = lf(KEY_MS.threeNumber, 'S7') - 2; // ≈ ১
-  const cardAt = lf(KEY_MS.p3Start, 'S7') - 2; // ≈ ৮৬
-  const shieldAt = lf(KEY_MS.p3Care, 'S7') - 2; // ≈ ১৪৮
-  const endAt = lf(42460, 'S7') - 10; // "থাকা" শেষ ≈ ২০০ → ১৯০
+  const badgeAt = lf(KEY_MS.threeNumber, 'S7') - 2;
+  const cardAt = lf(KEY_MS.p3Start, 'S7') - 2;
+  const shieldAt = lf(KEY_MS.p3Care, 'S7') - 2;
+  const endAt = endLf(wEnd(69), 'S7', 10); // "থাকা" শেষ
   const drop = progressBetween(frame, cardAt + 6, cardAt + 30);
 
   return (
@@ -551,15 +558,15 @@ const StepTag: React.FC<{value: number; color: string; delay: number; exitAt: nu
 export const Scene8: React.FC = () => {
   const frame = useCurrentFrame();
   const area = LAYOUT_B.infoArea;
-  const badgeAt = 0; // "চার" ≈ ফ্রেম ১০৬২ (লোকাল −১)
-  const titleAt = lf(KEY_MS.p4aStart, 'S8') - 2; // ≈ ৩৫
-  const clodAt = lf(45500, 'S8') - 2; // "ঢিলা" ≈ ৭৫ → ৭৩
-  const waterAt = lf(KEY_MS.p4Water, 'S8') - 2; // "পানি" ≈ ১১২ → ১১০
-  const aagheAt = lf(KEY_MS.p4bStart, 'S8'); // "আগে" ≈ ১৩৭
-  const clodAgainAt = lf(48500, 'S8'); // "ঢিলা কুলুপ" ≈ ১৪৯
-  const orAt = lf(KEY_MS.p4Or, 'S8') - 2; // "অথবা" ≈ ১৭৫ → ১৭৩
-  const tissueAt = lf(50000, 'S8') - 2; // "টয়লেট" ≈ ১৮৭ → ১৮৫
-  const endAt = lf(51960, 'S8') - 10; // "করা" শেষ ≈ ২৩৬ → ২২৬
+  const badgeAt = 0; // "চার" — সিনের শুরু থেকেই
+  const titleAt = lf(KEY_MS.p4aStart, 'S8') - 2;
+  const clodAt = lf(wStart(76), 'S8') - 2; // "ঢিলা"
+  const waterAt = lf(KEY_MS.p4Water, 'S8') - 2; // "পানি"
+  const aagheAt = lf(KEY_MS.p4bStart, 'S8'); // "আগে"
+  const clodAgainAt = lf(wStart(82), 'S8'); // "ঢিলা কুলুপ" (২য় বার)
+  const orAt = lf(KEY_MS.p4Or, 'S8') - 2; // "অথবা"
+  const tissueAt = lf(wStart(85), 'S8') - 2; // "টয়লেট"
+  const endAt = endLf(wEnd(88), 'S8', 10); // "করা" শেষ
 
   const clodDraw = progressBetween(frame, clodAt + 6, clodAt + 28);
   const dropDraw = progressBetween(frame, waterAt + 6, waterAt + 28);
