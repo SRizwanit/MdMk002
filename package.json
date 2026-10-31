@@ -1,0 +1,28 @@
+{
+  "name": "mdmk-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MDMK - ইস্তেঞ্জা সুন্নাহ (পরবর্তী ৪টি): animated captions, motion graphics and infographics with Remotion",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "studio": "remotion studio index.ts",
+    "compositions": "remotion compositions index.ts",
+    "render": "remotion render index.ts MDMK out.mp4",
+    "preview": "remotion render index.ts MDMK preview.mp4 --scale=0.5",
+    "still": "remotion still index.ts MDMK still.png --frame=100",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.504",
+    "@remotion/google-fonts": "4.0.504",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.504"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
+  }
+}

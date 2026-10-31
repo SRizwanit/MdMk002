@@ -1,0 +1,9 @@
+node_modules
+out.mp4
+preview.mp4
+still*.png
+*.log
+.DS_Store
+.remotion
+render.log
+compositions.log
