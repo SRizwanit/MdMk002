@@ -1,1 +1,168 @@
+# render.yml — MDMK ভিডিও রেন্ডার (mdmk02.md ধাপ ৮)
+# মোবাইলে: Actions ট্যাব → "Render MDMK" → Run workflow → mode বেছে চালান।
+name: Render MDMK
 
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "stills = কয়েকটা ফ্রেমের ছবি (দ্রুত) • preview = ছোট স্কেলে ভিডিও • full = ফাইনাল ভিডিও"
+        type: choice
+        required: true
+        default: stills
+        options:
+          - stills
+          - preview
+          - full
+      frames:
+        description: "stills: কমা-দিয়ে ফ্রেম নম্বর (যেমন 100,300,700) • preview: ঐচ্ছিক রেঞ্জ (যেমন 0-200; ফাঁকা = পুরোটা) • full এ ব্যবহার হয় না"
+        type: string
+        required: false
+        default: "100,300,700,1150,1850"
+      scale:
+        description: "preview এর স্কেল (০.৫ = ৫৪০×৯৬০)"
+        type: string
+        required: false
+        default: "0.5"
+      concurrency:
+        description: "সমান্তরাল ট্যাব (ফাঁকা = অটো; রেন্ডার ক্র্যাশ করলে 1 বা 2 দিন)"
+        type: string
+        required: false
+        default: ""
+      release:
+        description: "preview/full শেষে GitHub Release-এ আপলোড (মোবাইলে সরাসরি mp4 ডাউনলোড)"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      MODE: ${{ inputs.mode }}
+      FRAMES: ${{ inputs.frames }}
+      SCALE: ${{ inputs.scale }}
+      CONC: ${{ inputs.concurrency }}
+      ENTRY: index.ts
+      COMP: MDMK
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Chrome Headless Shell এর জন্য Linux লাইব্রেরি (Ubuntu 24.04 → libasound2t64)
+      - name: Install system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 libdbus-1-3 libatk1.0-0 libasound2t64 libxrandr2 \
+            libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libgbm-dev \
+            libcups2 libcairo2 libpango-1.0-0 libatk-bridge2.0-0
+
+      # package-lock.json নেই, তাই npm ci নয়
+      - name: Install npm packages
+        run: npm install --no-audit --no-fund
+
+      - name: Ensure Chrome Headless Shell
+        run: npx remotion browser ensure
+
+      - name: Check inputs and composition
+        run: |
+          set -e
+          if [ "$MODE" = "stills" ] && ! echo "$FRAMES" | grep -Eq '^[0-9]+([ ]*,[ ]*[0-9]+)*$'; then
+            echo "::error::stills এর frames হবে কমা-দিয়ে সংখ্যা, যেমন 100,300,700"; exit 1
+          fi
+          npx remotion compositions "$ENTRY" | tee compositions.log
+
+      # ---------- stills ----------
+      - name: Render stills
+        if: ${{ inputs.mode == 'stills' }}
+        run: |
+          set -o pipefail
+          CONC_FLAG=""
+          if [ -n "$CONC" ]; then CONC_FLAG="--concurrency=$CONC"; fi
+          for f in $(echo "$FRAMES" | tr ',' ' '); do
+            echo "=== still frame $f ==="
+            npx remotion still "$ENTRY" "$COMP" "still-$f.png" --frame="$f" $CONC_FLAG 2>&1 | tee -a render.log
+          done
+          ls -la still-*.png
+
+      # ---------- preview ----------
+      - name: Render preview
+        if: ${{ inputs.mode == 'preview' }}
+        run: |
+          set -o pipefail
+          EXTRA=""
+          if [ -n "$CONC" ]; then EXTRA="$EXTRA --concurrency=$CONC"; fi
+          if echo "$FRAMES" | grep -Eq '^[0-9]+-[0-9]+$'; then EXTRA="$EXTRA --frames=$FRAMES"; fi
+          npx remotion render "$ENTRY" "$COMP" preview.mp4 --scale="$SCALE" --crf=28 $EXTRA 2>&1 | tee render.log
+          ls -la preview.mp4
+
+      # ---------- full ----------
+      - name: Render full video
+        if: ${{ inputs.mode == 'full' }}
+        run: |
+          set -o pipefail
+          EXTRA=""
+          if [ -n "$CONC" ]; then EXTRA="--concurrency=$CONC"; fi
+          npx remotion render "$ENTRY" "$COMP" out.mp4 --codec=h264 --crf=18 $EXTRA 2>&1 | tee render.log
+          ls -la out.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out.mp4 || true
+
+      - name: Upload stills
+        if: ${{ inputs.mode == 'stills' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: stills
+          path: still-*.png
+          retention-days: 7
+
+      - name: Upload preview
+        if: ${{ inputs.mode == 'preview' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview
+          path: preview.mp4
+          retention-days: 7
+
+      - name: Upload full video
+        if: ${{ inputs.mode == 'full' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: out
+          path: out.mp4
+          retention-days: 7
+
+      # ব্যর্থ হলে লগ ডাউনলোড করে শেষ ~৩০ লাইন Claude-কে পাঠান (ধাপ ৯.২)
+      - name: Upload logs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs
+          path: |
+            render.log
+            compositions.log
+          if-no-files-found: ignore
+          retention-days: 7
+
+      # ঐচ্ছিক: Releases ট্যাবে সরাসরি mp4 লিংক
+      - name: Publish GitHub Release
+        if: ${{ inputs.release && inputs.mode != 'stills' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FILE="out.mp4"
+          if [ "$MODE" = "preview" ]; then FILE="preview.mp4"; fi
+          TAG="render-${MODE}-${{ github.run_number }}"
+          gh release create "$TAG" "$FILE" \
+            --title "MDMK $MODE #${{ github.run_number }}" \
+            --notes "Rendered by GitHub Actions run #${{ github.run_number }} (mode: $MODE)."
+          echo "Release: $TAG" >> "$GITHUB_STEP_SUMMARY"
