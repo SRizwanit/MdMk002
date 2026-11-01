@@ -353,7 +353,7 @@ export interface ProgressRingProps {
   /** ভরতে কত ফ্রেম লাগবে */
   duration?: number;
   exitAt?: number;
-  /** নিচের ছোট লেখা (যেমন "সুন্নাহ") */
+  /** নিচের ছোট লেখা (যেমন "সুন্নাত") */
   label?: string;
   style?: React.CSSProperties;
 }
@@ -651,7 +651,7 @@ export const WaterDrop: React.FC<IconProps> = (p) => {
   );
 };
 
-/** 🧱 ঢিলা/কুলুপ (মাটির টুকরো): অমসৃণ ডেলা */
+/** 🧱 ঢিলা/কুলুখ (মাটির টুকরো): অমসৃণ ডেলা */
 export const ClodIcon: React.FC<IconProps> = (p) => {
   const {size, color, strokeWidth, draw, style} = {...ICON_DEFAULTS, color: '#C58B55', ...p};
   const d = 'M16 62 L22 40 L40 28 L62 30 L82 44 L86 66 L70 80 L36 82 Z';
@@ -796,7 +796,7 @@ export interface SunnahGridProps {
 }
 
 /**
- * ১৬ ঘরের গ্রিড (ডিফল্ট ৪×৪)। প্রতিটি ঘরে সুন্নাহ-নম্বর (বাংলায়)।
+ * ১৬ ঘরের গ্রিড (ডিফল্ট ৪×৪)। প্রতিটি ঘরে সুন্নাত-নম্বর (বাংলায়)।
  *  - known (সবুজ ✓): আগে জানা/সম্পূর্ণ
  *  - today (গোল্ড পালস): আজকের ৪টি
  *  - remaining (ধূসর আউটলাইন, মৃদু পালস): বাকি

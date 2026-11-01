@@ -1,0 +1,2488 @@
+{
+ "metadata": {
+  "file": "534b9052-7b9d-4a30-80ee-4ee26fc028e6.mp4",
+  "duration_ms": 79890,
+  "duration_sec": 79.89,
+  "duration_formatted": "00:01:19.890",
+  "language": "bn-Bengali",
+  "total_words": 129,
+  "total_segments": 14,
+  "transcription_type": "word-level, re-aligned to real audio silence/energy (10ms envelope) — CORRECTED SPELLING",
+  "corrections_applied": [
+   "ক্যাবলার->কেবলার",
+   "ফিট->পিঠ",
+   "সতর্কলা->সতর ঢাকা",
+   "প্রসার কারখানা->প্রস্রাব পায়খানা",
+   "শূন্য->সুন্নাহ",
+   "অবারকাতু->ওয়া বারাকাতুহু"
+  ]
+ },
+ "full_transcript_corrected": "আসসালামু আলাইকুম প্রিয় দর্শক শ্রোতা গত ভিডিওতে আমরা জেনেছি ষোলোটি সুন্নাহ এর মধ্যে চারটি জেনেছি আজকে আমরা পরবর্তী চারটি জানবো আসুন জেনে নিই ইস্তেঞ্জার সুন্নাহ পরবর্তী চারটির মধ্যে এক নাম্বার হলো কেবলার দিকে মুখ করিয়া বা পিঠ করিয়া না বসা দুই নাম্বার হলো যথাসম্ভব বসার নিকটবর্তী হইয়া সতর ঢাকা এবং বসিয়া প্রস্রাব পায়খানা করা দাঁড়িয়ে প্রস্রাব না করা তিন নাম্বার হলো নাপাক পানি অথবা প্রস্রাব হইতে সতর্কতার সহিত বাঁচিয়া থাকা চার নাম্বার হলো প্রস্রাব পায়খানা শেষে ঢিলা কুলুপ ও পানি ব্যবহারের আগে ঢিলা কুলুপ অথবা টয়লেট পেপার ব্যবহার করা এই চারটি হলো ইস্তেঞ্জার পরবর্তী চারটি সুন্নার মধ্যে এর অন্যতম চারটি সুন্নাহ ষোলোটি সুন্নার মধ্যে অন্যতম চারটি সুন্নাহ বাকি রইলো আর আটটি সুন্নাহ পর্ব আকারে বাকি আটটি সুন্নাহ জানার জন্য MDMK এর সাথে থাকুন আসসালামু আলাইকুম ওয়া রহমাতুল্লাহি ওয়া বারাকাতুহু",
+ "full_transcript_original": "আসসালামু আলাইকুম প্রিয় দর্শক শ্রোতা গত ভিডিওতে আমরা জেনেছি ষোলোটি এর মধ্যে চারটি জেনেছি আজকে আমরা পরবর্তী চারটি জানবো আসুন জেনে নিই ইস্তেঞ্জার সুন্না পরবর্তী চারটির মধ্যে এক নাম্বার হলো কেবলার দিকে মুখ করিয়া বা পিঠ করিয়া না বসা দুই নাম্বার হলো যথাসম্ভব বসার নিকটবর্তী হয়ে সতর ঢাকা এবং বসে প্রস্রাব পায়খানা করা দাঁড়িয়ে প্রস্রাব না করা তিন নাম্বার হলো নাপাকি পানি অথবা প্রস্রাব থেকে সতর্কতার সহিত বেঁচে থাকা চার নাম্বার হলো উম প্রস্রাব পায়খানা শেষে ঢিলা তো পানি ব্যবহারের আগে ঢিলা কুলুপ অথবা টয়লেট পেপার ব্যবহার এই চারটি হলো ইস্তেঞ্জার পরবর্তী চারটি সুন্নার মধ্যে এর অন্যতম চারটি সুন্না ষোলোটি সুন্নার মধ্যে অন্যতম চারটি সুন্না বাকি রইলো আর আটটি সুন্না পর্ব পর্ব আকারে বাকি আটটি সুন্না জানার জন্য MDMK এর সাথে থাকুন আসসালামু আলাইকুম ওয়া রহমাতুল্লাহি ওয়া বারাকাতুহু",
+ "segments": [
+  {
+   "start_ms": 590,
+   "end_ms": 4190,
+   "start_sec": 0.59,
+   "end_sec": 4.19,
+   "text": "আসসালামু আলাইকুম প্রিয় দর্শক শ্রোতা গত ভিডিওতে",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 0,
+     "word": "আসসালামু",
+     "start_ms": 590,
+     "end_ms": 1330,
+     "start_sec": 0.59,
+     "end_sec": 1.33,
+     "duration_ms": 740
+    },
+    {
+     "id": 1,
+     "word": "আলাইকুম",
+     "start_ms": 1350,
+     "end_ms": 2090,
+     "start_sec": 1.35,
+     "end_sec": 2.09,
+     "duration_ms": 740
+    },
+    {
+     "id": 2,
+     "word": "প্রিয়",
+     "start_ms": 2110,
+     "end_ms": 2460,
+     "start_sec": 2.11,
+     "end_sec": 2.46,
+     "duration_ms": 350
+    },
+    {
+     "id": 3,
+     "word": "দর্শক",
+     "start_ms": 2480,
+     "end_ms": 2894,
+     "start_sec": 2.48,
+     "end_sec": 2.894,
+     "duration_ms": 414
+    },
+    {
+     "id": 4,
+     "word": "শ্রোতা",
+     "start_ms": 2914,
+     "end_ms": 3223,
+     "start_sec": 2.914,
+     "end_sec": 3.223,
+     "duration_ms": 309
+    },
+    {
+     "id": 5,
+     "word": "গত",
+     "start_ms": 3243,
+     "end_ms": 3553,
+     "start_sec": 3.243,
+     "end_sec": 3.553,
+     "duration_ms": 310
+    },
+    {
+     "id": 6,
+     "word": "ভিডিওতে",
+     "start_ms": 3573,
+     "end_ms": 4190,
+     "start_sec": 3.573,
+     "end_sec": 4.19,
+     "duration_ms": 617
+    }
+   ]
+  },
+  {
+   "start_ms": 5480,
+   "end_ms": 8610,
+   "start_sec": 5.48,
+   "end_sec": 8.61,
+   "text": "আমরা জেনেছি ষোলোটি সুন্নাহ এর মধ্যে",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 7,
+     "word": "আমরা",
+     "start_ms": 5480,
+     "end_ms": 5990,
+     "start_sec": 5.48,
+     "end_sec": 5.99,
+     "duration_ms": 510
+    },
+    {
+     "id": 8,
+     "word": "জেনেছি",
+     "start_ms": 6010,
+     "end_ms": 6710,
+     "start_sec": 6.01,
+     "end_sec": 6.71,
+     "duration_ms": 700
+    },
+    {
+     "id": 9,
+     "word": "ষোলোটি",
+     "start_ms": 6730,
+     "end_ms": 7150,
+     "start_sec": 6.73,
+     "end_sec": 7.15,
+     "duration_ms": 420
+    },
+    {
+     "id": 10,
+     "word": "সুন্নাহ",
+     "start_ms": 7170,
+     "end_ms": 7730,
+     "start_sec": 7.17,
+     "end_sec": 7.73,
+     "duration_ms": 560
+    },
+    {
+     "id": 11,
+     "word": "এর",
+     "start_ms": 7750,
+     "end_ms": 8186,
+     "start_sec": 7.75,
+     "end_sec": 8.186,
+     "duration_ms": 436
+    },
+    {
+     "id": 12,
+     "word": "মধ্যে",
+     "start_ms": 8206,
+     "end_ms": 8610,
+     "start_sec": 8.206,
+     "end_sec": 8.61,
+     "duration_ms": 404
+    }
+   ]
+  },
+  {
+   "start_ms": 9260,
+   "end_ms": 17220,
+   "start_sec": 9.26,
+   "end_sec": 17.22,
+   "text": "চারটি জেনেছি আজকে আমরা পরবর্তী চারটি জানবো আসুন জেনে নিই ইস্তেঞ্জার সুন্নাহ",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 13,
+     "word": "চারটি",
+     "start_ms": 9260,
+     "end_ms": 10100,
+     "start_sec": 9.26,
+     "end_sec": 10.1,
+     "duration_ms": 840
+    },
+    {
+     "id": 14,
+     "word": "জেনেছি",
+     "start_ms": 10120,
+     "end_ms": 10980,
+     "start_sec": 10.12,
+     "end_sec": 10.98,
+     "duration_ms": 860
+    },
+    {
+     "id": 15,
+     "word": "আজকে",
+     "start_ms": 11470,
+     "end_ms": 12110,
+     "start_sec": 11.47,
+     "end_sec": 12.11,
+     "duration_ms": 640
+    },
+    {
+     "id": 16,
+     "word": "আমরা",
+     "start_ms": 12130,
+     "end_ms": 12800,
+     "start_sec": 12.13,
+     "end_sec": 12.8,
+     "duration_ms": 670
+    },
+    {
+     "id": 17,
+     "word": "পরবর্তী",
+     "start_ms": 13060,
+     "end_ms": 13650,
+     "start_sec": 13.06,
+     "end_sec": 13.65,
+     "duration_ms": 590
+    },
+    {
+     "id": 18,
+     "word": "চারটি",
+     "start_ms": 13670,
+     "end_ms": 14100,
+     "start_sec": 13.67,
+     "end_sec": 14.1,
+     "duration_ms": 430
+    },
+    {
+     "id": 19,
+     "word": "জানবো",
+     "start_ms": 14120,
+     "end_ms": 14710,
+     "start_sec": 14.12,
+     "end_sec": 14.71,
+     "duration_ms": 590
+    },
+    {
+     "id": 20,
+     "word": "আসুন",
+     "start_ms": 15220,
+     "end_ms": 15550,
+     "start_sec": 15.22,
+     "end_sec": 15.55,
+     "duration_ms": 330
+    },
+    {
+     "id": 21,
+     "word": "জেনে",
+     "start_ms": 15570,
+     "end_ms": 15803,
+     "start_sec": 15.57,
+     "end_sec": 15.803,
+     "duration_ms": 233
+    },
+    {
+     "id": 22,
+     "word": "নিই",
+     "start_ms": 15823,
+     "end_ms": 16070,
+     "start_sec": 15.823,
+     "end_sec": 16.07,
+     "duration_ms": 247
+    },
+    {
+     "id": 23,
+     "word": "ইস্তেঞ্জার",
+     "start_ms": 16370,
+     "end_ms": 16890,
+     "start_sec": 16.37,
+     "end_sec": 16.89,
+     "duration_ms": 520
+    },
+    {
+     "id": 24,
+     "word": "সুন্নাহ",
+     "start_ms": 16910,
+     "end_ms": 17220,
+     "start_sec": 16.91,
+     "end_sec": 17.22,
+     "duration_ms": 310
+    }
+   ]
+  },
+  {
+   "start_ms": 19000,
+   "end_ms": 21640,
+   "start_sec": 19.0,
+   "end_sec": 21.64,
+   "text": "পরবর্তী চারটির মধ্যে এক নাম্বার হলো",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 25,
+     "word": "পরবর্তী",
+     "start_ms": 19000,
+     "end_ms": 19440,
+     "start_sec": 19.0,
+     "end_sec": 19.44,
+     "duration_ms": 440
+    },
+    {
+     "id": 26,
+     "word": "চারটির",
+     "start_ms": 19460,
+     "end_ms": 20050,
+     "start_sec": 19.46,
+     "end_sec": 20.05,
+     "duration_ms": 590
+    },
+    {
+     "id": 27,
+     "word": "মধ্যে",
+     "start_ms": 20070,
+     "end_ms": 20330,
+     "start_sec": 20.07,
+     "end_sec": 20.33,
+     "duration_ms": 260
+    },
+    {
+     "id": 28,
+     "word": "এক",
+     "start_ms": 20690,
+     "end_ms": 20990,
+     "start_sec": 20.69,
+     "end_sec": 20.99,
+     "duration_ms": 300
+    },
+    {
+     "id": 29,
+     "word": "নাম্বার",
+     "start_ms": 21010,
+     "end_ms": 21260,
+     "start_sec": 21.01,
+     "end_sec": 21.26,
+     "duration_ms": 250
+    },
+    {
+     "id": 30,
+     "word": "হলো",
+     "start_ms": 21280,
+     "end_ms": 21640,
+     "start_sec": 21.28,
+     "end_sec": 21.64,
+     "duration_ms": 360
+    }
+   ]
+  },
+  {
+   "start_ms": 23190,
+   "end_ms": 26110,
+   "start_sec": 23.19,
+   "end_sec": 26.11,
+   "text": "কেবলার দিকে মুখ করিয়া বা পিঠ করিয়া না বসা",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 31,
+     "word": "কেবলার",
+     "start_ms": 23190,
+     "end_ms": 23700,
+     "start_sec": 23.19,
+     "end_sec": 23.7,
+     "duration_ms": 510
+    },
+    {
+     "id": 32,
+     "word": "দিকে",
+     "start_ms": 23720,
+     "end_ms": 24040,
+     "start_sec": 23.72,
+     "end_sec": 24.04,
+     "duration_ms": 320
+    },
+    {
+     "id": 33,
+     "word": "মুখ",
+     "start_ms": 24060,
+     "end_ms": 24315,
+     "start_sec": 24.06,
+     "end_sec": 24.315,
+     "duration_ms": 255
+    },
+    {
+     "id": 34,
+     "word": "করিয়া",
+     "start_ms": 24335,
+     "end_ms": 24770,
+     "start_sec": 24.335,
+     "end_sec": 24.77,
+     "duration_ms": 435
+    },
+    {
+     "id": 35,
+     "word": "বা",
+     "start_ms": 24790,
+     "end_ms": 24920,
+     "start_sec": 24.79,
+     "end_sec": 24.92,
+     "duration_ms": 130
+    },
+    {
+     "id": 36,
+     "word": "পিঠ",
+     "start_ms": 24940,
+     "end_ms": 25150,
+     "start_sec": 24.94,
+     "end_sec": 25.15,
+     "duration_ms": 210
+    },
+    {
+     "id": 37,
+     "word": "করিয়া",
+     "start_ms": 25170,
+     "end_ms": 25560,
+     "start_sec": 25.17,
+     "end_sec": 25.56,
+     "duration_ms": 390
+    },
+    {
+     "id": 38,
+     "word": "না",
+     "start_ms": 25580,
+     "end_ms": 25794,
+     "start_sec": 25.58,
+     "end_sec": 25.794,
+     "duration_ms": 214
+    },
+    {
+     "id": 39,
+     "word": "বসা",
+     "start_ms": 25814,
+     "end_ms": 26110,
+     "start_sec": 25.814,
+     "end_sec": 26.11,
+     "duration_ms": 296
+    }
+   ]
+  },
+  {
+   "start_ms": 27080,
+   "end_ms": 37190,
+   "start_sec": 27.08,
+   "end_sec": 37.19,
+   "text": "দুই নাম্বার হলো যথাসম্ভব বসার নিকটবর্তী হইয়া সতর ঢাকা এবং বসিয়া প্রস্রাব পায়খানা করা দাঁড়িয়ে প্রস্রাব না করা তিন নাম্বার হলো",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 40,
+     "word": "দুই",
+     "start_ms": 27080,
+     "end_ms": 27410,
+     "start_sec": 27.08,
+     "end_sec": 27.41,
+     "duration_ms": 330
+    },
+    {
+     "id": 41,
+     "word": "নাম্বার",
+     "start_ms": 27430,
+     "end_ms": 27879,
+     "start_sec": 27.43,
+     "end_sec": 27.879,
+     "duration_ms": 449
+    },
+    {
+     "id": 42,
+     "word": "হলো",
+     "start_ms": 27899,
+     "end_ms": 28320,
+     "start_sec": 27.899,
+     "end_sec": 28.32,
+     "duration_ms": 421
+    },
+    {
+     "id": 43,
+     "word": "যথাসম্ভব",
+     "start_ms": 28340,
+     "end_ms": 29030,
+     "start_sec": 28.34,
+     "end_sec": 29.03,
+     "duration_ms": 690
+    },
+    {
+     "id": 44,
+     "word": "বসার",
+     "start_ms": 29050,
+     "end_ms": 29500,
+     "start_sec": 29.05,
+     "end_sec": 29.5,
+     "duration_ms": 450
+    },
+    {
+     "id": 45,
+     "word": "নিকটবর্তী",
+     "start_ms": 29520,
+     "end_ms": 30170,
+     "start_sec": 29.52,
+     "end_sec": 30.17,
+     "duration_ms": 650
+    },
+    {
+     "id": 46,
+     "word": "হইয়া",
+     "start_ms": 30190,
+     "end_ms": 30750,
+     "start_sec": 30.19,
+     "end_sec": 30.75,
+     "duration_ms": 560
+    },
+    {
+     "id": 47,
+     "word": "সতর",
+     "start_ms": 31220,
+     "end_ms": 31580,
+     "start_sec": 31.22,
+     "end_sec": 31.58,
+     "duration_ms": 360
+    },
+    {
+     "id": 48,
+     "word": "ঢাকা",
+     "start_ms": 31600,
+     "end_ms": 31948,
+     "start_sec": 31.6,
+     "end_sec": 31.948,
+     "duration_ms": 348
+    },
+    {
+     "id": 49,
+     "word": "এবং",
+     "start_ms": 31968,
+     "end_ms": 32200,
+     "start_sec": 31.968,
+     "end_sec": 32.2,
+     "duration_ms": 232
+    },
+    {
+     "id": 50,
+     "word": "বসিয়া",
+     "start_ms": 32220,
+     "end_ms": 32720,
+     "start_sec": 32.22,
+     "end_sec": 32.72,
+     "duration_ms": 500
+    },
+    {
+     "id": 51,
+     "word": "প্রস্রাব",
+     "start_ms": 32740,
+     "end_ms": 33170,
+     "start_sec": 32.74,
+     "end_sec": 33.17,
+     "duration_ms": 430
+    },
+    {
+     "id": 52,
+     "word": "পায়খানা",
+     "start_ms": 33190,
+     "end_ms": 33770,
+     "start_sec": 33.19,
+     "end_sec": 33.77,
+     "duration_ms": 580
+    },
+    {
+     "id": 53,
+     "word": "করা",
+     "start_ms": 33790,
+     "end_ms": 34040,
+     "start_sec": 33.79,
+     "end_sec": 34.04,
+     "duration_ms": 250
+    },
+    {
+     "id": 54,
+     "word": "দাঁড়িয়ে",
+     "start_ms": 34580,
+     "end_ms": 34900,
+     "start_sec": 34.58,
+     "end_sec": 34.9,
+     "duration_ms": 320
+    },
+    {
+     "id": 55,
+     "word": "প্রস্রাব",
+     "start_ms": 34920,
+     "end_ms": 35210,
+     "start_sec": 34.92,
+     "end_sec": 35.21,
+     "duration_ms": 290
+    },
+    {
+     "id": 56,
+     "word": "না",
+     "start_ms": 35230,
+     "end_ms": 35460,
+     "start_sec": 35.23,
+     "end_sec": 35.46,
+     "duration_ms": 230
+    },
+    {
+     "id": 57,
+     "word": "করা",
+     "start_ms": 35480,
+     "end_ms": 35690,
+     "start_sec": 35.48,
+     "end_sec": 35.69,
+     "duration_ms": 210
+    },
+    {
+     "id": 58,
+     "word": "তিন",
+     "start_ms": 36250,
+     "end_ms": 36590,
+     "start_sec": 36.25,
+     "end_sec": 36.59,
+     "duration_ms": 340
+    },
+    {
+     "id": 59,
+     "word": "নাম্বার",
+     "start_ms": 36610,
+     "end_ms": 36780,
+     "start_sec": 36.61,
+     "end_sec": 36.78,
+     "duration_ms": 170
+    },
+    {
+     "id": 60,
+     "word": "হলো",
+     "start_ms": 36800,
+     "end_ms": 37190,
+     "start_sec": 36.8,
+     "end_sec": 37.19,
+     "duration_ms": 390
+    }
+   ]
+  },
+  {
+   "start_ms": 38740,
+   "end_ms": 43310,
+   "start_sec": 38.74,
+   "end_sec": 43.31,
+   "text": "নাপাক পানি অথবা প্রস্রাব হইতে সতর্কতার সহিত বাঁচিয়া থাকা",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 61,
+     "word": "নাপাক",
+     "start_ms": 38740,
+     "end_ms": 39220,
+     "start_sec": 38.74,
+     "end_sec": 39.22,
+     "duration_ms": 480
+    },
+    {
+     "id": 62,
+     "word": "পানি",
+     "start_ms": 39240,
+     "end_ms": 39470,
+     "start_sec": 39.24,
+     "end_sec": 39.47,
+     "duration_ms": 230
+    },
+    {
+     "id": 63,
+     "word": "অথবা",
+     "start_ms": 39490,
+     "end_ms": 40020,
+     "start_sec": 39.49,
+     "end_sec": 40.02,
+     "duration_ms": 530
+    },
+    {
+     "id": 64,
+     "word": "প্রস্রাব",
+     "start_ms": 40040,
+     "end_ms": 40510,
+     "start_sec": 40.04,
+     "end_sec": 40.51,
+     "duration_ms": 470
+    },
+    {
+     "id": 65,
+     "word": "হইতে",
+     "start_ms": 40530,
+     "end_ms": 41090,
+     "start_sec": 40.53,
+     "end_sec": 41.09,
+     "duration_ms": 560
+    },
+    {
+     "id": 66,
+     "word": "সতর্কতার",
+     "start_ms": 41110,
+     "end_ms": 41870,
+     "start_sec": 41.11,
+     "end_sec": 41.87,
+     "duration_ms": 760
+    },
+    {
+     "id": 67,
+     "word": "সহিত",
+     "start_ms": 41890,
+     "end_ms": 42280,
+     "start_sec": 41.89,
+     "end_sec": 42.28,
+     "duration_ms": 390
+    },
+    {
+     "id": 68,
+     "word": "বাঁচিয়া",
+     "start_ms": 42660,
+     "end_ms": 42960,
+     "start_sec": 42.66,
+     "end_sec": 42.96,
+     "duration_ms": 300
+    },
+    {
+     "id": 69,
+     "word": "থাকা",
+     "start_ms": 42980,
+     "end_ms": 43310,
+     "start_sec": 42.98,
+     "end_sec": 43.31,
+     "duration_ms": 330
+    }
+   ]
+  },
+  {
+   "start_ms": 43990,
+   "end_ms": 44940,
+   "start_sec": 43.99,
+   "end_sec": 44.94,
+   "text": "চার নাম্বার হলো",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 70,
+     "word": "চার",
+     "start_ms": 43990,
+     "end_ms": 44320,
+     "start_sec": 43.99,
+     "end_sec": 44.32,
+     "duration_ms": 330
+    },
+    {
+     "id": 71,
+     "word": "নাম্বার",
+     "start_ms": 44340,
+     "end_ms": 44643,
+     "start_sec": 44.34,
+     "end_sec": 44.643,
+     "duration_ms": 303
+    },
+    {
+     "id": 72,
+     "word": "হলো",
+     "start_ms": 44663,
+     "end_ms": 44940,
+     "start_sec": 44.663,
+     "end_sec": 44.94,
+     "duration_ms": 277
+    }
+   ]
+  },
+  {
+   "start_ms": 45640,
+   "end_ms": 52700,
+   "start_sec": 45.64,
+   "end_sec": 52.7,
+   "text": "প্রস্রাব পায়খানা শেষে ঢিলা কুলুপ ও পানি ব্যবহারের আগে ঢিলা কুলুপ অথবা টয়লেট পেপার ব্যবহার করা",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 73,
+     "word": "প্রস্রাব",
+     "start_ms": 45640,
+     "end_ms": 45990,
+     "start_sec": 45.64,
+     "end_sec": 45.99,
+     "duration_ms": 350
+    },
+    {
+     "id": 74,
+     "word": "পায়খানা",
+     "start_ms": 46010,
+     "end_ms": 46550,
+     "start_sec": 46.01,
+     "end_sec": 46.55,
+     "duration_ms": 540
+    },
+    {
+     "id": 75,
+     "word": "শেষে",
+     "start_ms": 46570,
+     "end_ms": 46970,
+     "start_sec": 46.57,
+     "end_sec": 46.97,
+     "duration_ms": 400
+    },
+    {
+     "id": 76,
+     "word": "ঢিলা",
+     "start_ms": 46990,
+     "end_ms": 47250,
+     "start_sec": 46.99,
+     "end_sec": 47.25,
+     "duration_ms": 260
+    },
+    {
+     "id": 77,
+     "word": "কুলুপ",
+     "start_ms": 47480,
+     "end_ms": 47790,
+     "start_sec": 47.48,
+     "end_sec": 47.79,
+     "duration_ms": 310
+    },
+    {
+     "id": 78,
+     "word": "ও",
+     "start_ms": 47810,
+     "end_ms": 48000,
+     "start_sec": 47.81,
+     "end_sec": 48.0,
+     "duration_ms": 190
+    },
+    {
+     "id": 79,
+     "word": "পানি",
+     "start_ms": 48020,
+     "end_ms": 48410,
+     "start_sec": 48.02,
+     "end_sec": 48.41,
+     "duration_ms": 390
+    },
+    {
+     "id": 80,
+     "word": "ব্যবহারের",
+     "start_ms": 48430,
+     "end_ms": 49010,
+     "start_sec": 48.43,
+     "end_sec": 49.01,
+     "duration_ms": 580
+    },
+    {
+     "id": 81,
+     "word": "আগে",
+     "start_ms": 49030,
+     "end_ms": 49220,
+     "start_sec": 49.03,
+     "end_sec": 49.22,
+     "duration_ms": 190
+    },
+    {
+     "id": 82,
+     "word": "ঢিলা",
+     "start_ms": 49240,
+     "end_ms": 49540,
+     "start_sec": 49.24,
+     "end_sec": 49.54,
+     "duration_ms": 300
+    },
+    {
+     "id": 83,
+     "word": "কুলুপ",
+     "start_ms": 49560,
+     "end_ms": 49910,
+     "start_sec": 49.56,
+     "end_sec": 49.91,
+     "duration_ms": 350
+    },
+    {
+     "id": 84,
+     "word": "অথবা",
+     "start_ms": 49930,
+     "end_ms": 50320,
+     "start_sec": 49.93,
+     "end_sec": 50.32,
+     "duration_ms": 390
+    },
+    {
+     "id": 85,
+     "word": "টয়লেট",
+     "start_ms": 50500,
+     "end_ms": 51050,
+     "start_sec": 50.5,
+     "end_sec": 51.05,
+     "duration_ms": 550
+    },
+    {
+     "id": 86,
+     "word": "পেপার",
+     "start_ms": 51490,
+     "end_ms": 51950,
+     "start_sec": 51.49,
+     "end_sec": 51.95,
+     "duration_ms": 460
+    },
+    {
+     "id": 87,
+     "word": "ব্যবহার",
+     "start_ms": 51970,
+     "end_ms": 52510,
+     "start_sec": 51.97,
+     "end_sec": 52.51,
+     "duration_ms": 540
+    },
+    {
+     "id": 88,
+     "word": "করা",
+     "start_ms": 52530,
+     "end_ms": 52700,
+     "start_sec": 52.53,
+     "end_sec": 52.7,
+     "duration_ms": 170
+    }
+   ]
+  },
+  {
+   "start_ms": 54600,
+   "end_ms": 55840,
+   "start_sec": 54.6,
+   "end_sec": 55.84,
+   "text": "এই চারটি হলো",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 89,
+     "word": "এই",
+     "start_ms": 54600,
+     "end_ms": 55050,
+     "start_sec": 54.6,
+     "end_sec": 55.05,
+     "duration_ms": 450
+    },
+    {
+     "id": 90,
+     "word": "চারটি",
+     "start_ms": 55070,
+     "end_ms": 55360,
+     "start_sec": 55.07,
+     "end_sec": 55.36,
+     "duration_ms": 290
+    },
+    {
+     "id": 91,
+     "word": "হলো",
+     "start_ms": 55380,
+     "end_ms": 55840,
+     "start_sec": 55.38,
+     "end_sec": 55.84,
+     "duration_ms": 460
+    }
+   ]
+  },
+  {
+   "start_ms": 57040,
+   "end_ms": 61430,
+   "start_sec": 57.04,
+   "end_sec": 61.43,
+   "text": "ইস্তেঞ্জার পরবর্তী চারটি সুন্নার মধ্যে এর অন্যতম চারটি সুন্নাহ",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 92,
+     "word": "ইস্তেঞ্জার",
+     "start_ms": 57040,
+     "end_ms": 57670,
+     "start_sec": 57.04,
+     "end_sec": 57.67,
+     "duration_ms": 630
+    },
+    {
+     "id": 93,
+     "word": "পরবর্তী",
+     "start_ms": 57690,
+     "end_ms": 58230,
+     "start_sec": 57.69,
+     "end_sec": 58.23,
+     "duration_ms": 540
+    },
+    {
+     "id": 94,
+     "word": "চারটি",
+     "start_ms": 58250,
+     "end_ms": 58600,
+     "start_sec": 58.25,
+     "end_sec": 58.6,
+     "duration_ms": 350
+    },
+    {
+     "id": 95,
+     "word": "সুন্নার",
+     "start_ms": 58620,
+     "end_ms": 59090,
+     "start_sec": 58.62,
+     "end_sec": 59.09,
+     "duration_ms": 470
+    },
+    {
+     "id": 96,
+     "word": "মধ্যে",
+     "start_ms": 59110,
+     "end_ms": 59500,
+     "start_sec": 59.11,
+     "end_sec": 59.5,
+     "duration_ms": 390
+    },
+    {
+     "id": 97,
+     "word": "এর",
+     "start_ms": 59710,
+     "end_ms": 60020,
+     "start_sec": 59.71,
+     "end_sec": 60.02,
+     "duration_ms": 310
+    },
+    {
+     "id": 98,
+     "word": "অন্যতম",
+     "start_ms": 60290,
+     "end_ms": 60730,
+     "start_sec": 60.29,
+     "end_sec": 60.73,
+     "duration_ms": 440
+    },
+    {
+     "id": 99,
+     "word": "চারটি",
+     "start_ms": 60750,
+     "end_ms": 61130,
+     "start_sec": 60.75,
+     "end_sec": 61.13,
+     "duration_ms": 380
+    },
+    {
+     "id": 100,
+     "word": "সুন্নাহ",
+     "start_ms": 61150,
+     "end_ms": 61430,
+     "start_sec": 61.15,
+     "end_sec": 61.43,
+     "duration_ms": 280
+    }
+   ]
+  },
+  {
+   "start_ms": 62220,
+   "end_ms": 65720,
+   "start_sec": 62.22,
+   "end_sec": 65.72,
+   "text": "ষোলোটি সুন্নার মধ্যে অন্যতম চারটি সুন্নাহ",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 101,
+     "word": "ষোলোটি",
+     "start_ms": 62220,
+     "end_ms": 62710,
+     "start_sec": 62.22,
+     "end_sec": 62.71,
+     "duration_ms": 490
+    },
+    {
+     "id": 102,
+     "word": "সুন্নার",
+     "start_ms": 62730,
+     "end_ms": 63130,
+     "start_sec": 62.73,
+     "end_sec": 63.13,
+     "duration_ms": 400
+    },
+    {
+     "id": 103,
+     "word": "মধ্যে",
+     "start_ms": 63150,
+     "end_ms": 63339,
+     "start_sec": 63.15,
+     "end_sec": 63.339,
+     "duration_ms": 189
+    },
+    {
+     "id": 104,
+     "word": "অন্যতম",
+     "start_ms": 63359,
+     "end_ms": 63910,
+     "start_sec": 63.359,
+     "end_sec": 63.91,
+     "duration_ms": 551
+    },
+    {
+     "id": 105,
+     "word": "চারটি",
+     "start_ms": 64410,
+     "end_ms": 64980,
+     "start_sec": 64.41,
+     "end_sec": 64.98,
+     "duration_ms": 570
+    },
+    {
+     "id": 106,
+     "word": "সুন্নাহ",
+     "start_ms": 65000,
+     "end_ms": 65720,
+     "start_sec": 65.0,
+     "end_sec": 65.72,
+     "duration_ms": 720
+    }
+   ]
+  },
+  {
+   "start_ms": 66690,
+   "end_ms": 68760,
+   "start_sec": 66.69,
+   "end_sec": 68.76,
+   "text": "বাকি রইলো আর আটটি সুন্নাহ",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 107,
+     "word": "বাকি",
+     "start_ms": 66690,
+     "end_ms": 66910,
+     "start_sec": 66.69,
+     "end_sec": 66.91,
+     "duration_ms": 220
+    },
+    {
+     "id": 108,
+     "word": "রইলো",
+     "start_ms": 66930,
+     "end_ms": 67410,
+     "start_sec": 66.93,
+     "end_sec": 67.41,
+     "duration_ms": 480
+    },
+    {
+     "id": 109,
+     "word": "আর",
+     "start_ms": 67680,
+     "end_ms": 67850,
+     "start_sec": 67.68,
+     "end_sec": 67.85,
+     "duration_ms": 170
+    },
+    {
+     "id": 110,
+     "word": "আটটি",
+     "start_ms": 67870,
+     "end_ms": 68260,
+     "start_sec": 67.87,
+     "end_sec": 68.26,
+     "duration_ms": 390
+    },
+    {
+     "id": 111,
+     "word": "সুন্নাহ",
+     "start_ms": 68280,
+     "end_ms": 68760,
+     "start_sec": 68.28,
+     "end_sec": 68.76,
+     "duration_ms": 480
+    }
+   ]
+  },
+  {
+   "start_ms": 70150,
+   "end_ms": 79520,
+   "start_sec": 70.15,
+   "end_sec": 79.52,
+   "text": "পর্ব আকারে বাকি আটটি সুন্নাহ জানার জন্য MDMK এর সাথে থাকুন আসসালামু আলাইকুম ওয়া রহমাতুল্লাহি ওয়া বারাকাতুহু",
+   "text_corrected": true,
+   "words": [
+    {
+     "id": 112,
+     "word": "পর্ব",
+     "start_ms": 70150,
+     "end_ms": 70430,
+     "start_sec": 70.15,
+     "end_sec": 70.43,
+     "duration_ms": 280
+    },
+    {
+     "id": 113,
+     "word": "আকারে",
+     "start_ms": 70450,
+     "end_ms": 70870,
+     "start_sec": 70.45,
+     "end_sec": 70.87,
+     "duration_ms": 420
+    },
+    {
+     "id": 114,
+     "word": "বাকি",
+     "start_ms": 70890,
+     "end_ms": 71350,
+     "start_sec": 70.89,
+     "end_sec": 71.35,
+     "duration_ms": 460
+    },
+    {
+     "id": 115,
+     "word": "আটটি",
+     "start_ms": 71370,
+     "end_ms": 71630,
+     "start_sec": 71.37,
+     "end_sec": 71.63,
+     "duration_ms": 260
+    },
+    {
+     "id": 116,
+     "word": "সুন্নাহ",
+     "start_ms": 71650,
+     "end_ms": 72050,
+     "start_sec": 71.65,
+     "end_sec": 72.05,
+     "duration_ms": 400
+    },
+    {
+     "id": 117,
+     "word": "জানার",
+     "start_ms": 72070,
+     "end_ms": 72680,
+     "start_sec": 72.07,
+     "end_sec": 72.68,
+     "duration_ms": 610
+    },
+    {
+     "id": 118,
+     "word": "জন্য",
+     "start_ms": 72700,
+     "end_ms": 73010,
+     "start_sec": 72.7,
+     "end_sec": 73.01,
+     "duration_ms": 310
+    },
+    {
+     "id": 119,
+     "word": "MDMK",
+     "start_ms": 73030,
+     "end_ms": 73360,
+     "start_sec": 73.03,
+     "end_sec": 73.36,
+     "duration_ms": 330
+    },
+    {
+     "id": 120,
+     "word": "এর",
+     "start_ms": 73940,
+     "end_ms": 74284,
+     "start_sec": 73.94,
+     "end_sec": 74.284,
+     "duration_ms": 344
+    },
+    {
+     "id": 121,
+     "word": "সাথে",
+     "start_ms": 74304,
+     "end_ms": 74730,
+     "start_sec": 74.304,
+     "end_sec": 74.73,
+     "duration_ms": 426
+    },
+    {
+     "id": 122,
+     "word": "থাকুন",
+     "start_ms": 74750,
+     "end_ms": 75190,
+     "start_sec": 74.75,
+     "end_sec": 75.19,
+     "duration_ms": 440
+    },
+    {
+     "id": 123,
+     "word": "আসসালামু",
+     "start_ms": 75770,
+     "end_ms": 76405,
+     "start_sec": 75.77,
+     "end_sec": 76.405,
+     "duration_ms": 635
+    },
+    {
+     "id": 124,
+     "word": "আলাইকুম",
+     "start_ms": 76425,
+     "end_ms": 77080,
+     "start_sec": 76.425,
+     "end_sec": 77.08,
+     "duration_ms": 655
+    },
+    {
+     "id": 125,
+     "word": "ওয়া",
+     "start_ms": 77390,
+     "end_ms": 77660,
+     "start_sec": 77.39,
+     "end_sec": 77.66,
+     "duration_ms": 270
+    },
+    {
+     "id": 126,
+     "word": "রহমাতুল্লাহি",
+     "start_ms": 77680,
+     "end_ms": 78540,
+     "start_sec": 77.68,
+     "end_sec": 78.54,
+     "duration_ms": 860
+    },
+    {
+     "id": 127,
+     "word": "ওয়া",
+     "start_ms": 78720,
+     "end_ms": 78942,
+     "start_sec": 78.72,
+     "end_sec": 78.942,
+     "duration_ms": 222
+    },
+    {
+     "id": 128,
+     "word": "বারাকাতুহু",
+     "start_ms": 78962,
+     "end_ms": 79520,
+     "start_sec": 78.962,
+     "end_sec": 79.52,
+     "duration_ms": 558
+    }
+   ]
+  }
+ ],
+ "words": [
+  {
+   "id": 0,
+   "word": "আসসালামু",
+   "start_ms": 590,
+   "end_ms": 1330,
+   "start_sec": 0.59,
+   "end_sec": 1.33,
+   "duration_ms": 740
+  },
+  {
+   "id": 1,
+   "word": "আলাইকুম",
+   "start_ms": 1350,
+   "end_ms": 2090,
+   "start_sec": 1.35,
+   "end_sec": 2.09,
+   "duration_ms": 740
+  },
+  {
+   "id": 2,
+   "word": "প্রিয়",
+   "start_ms": 2110,
+   "end_ms": 2460,
+   "start_sec": 2.11,
+   "end_sec": 2.46,
+   "duration_ms": 350
+  },
+  {
+   "id": 3,
+   "word": "দর্শক",
+   "start_ms": 2480,
+   "end_ms": 2894,
+   "start_sec": 2.48,
+   "end_sec": 2.894,
+   "duration_ms": 414
+  },
+  {
+   "id": 4,
+   "word": "শ্রোতা",
+   "start_ms": 2914,
+   "end_ms": 3223,
+   "start_sec": 2.914,
+   "end_sec": 3.223,
+   "duration_ms": 309
+  },
+  {
+   "id": 5,
+   "word": "গত",
+   "start_ms": 3243,
+   "end_ms": 3553,
+   "start_sec": 3.243,
+   "end_sec": 3.553,
+   "duration_ms": 310
+  },
+  {
+   "id": 6,
+   "word": "ভিডিওতে",
+   "start_ms": 3573,
+   "end_ms": 4190,
+   "start_sec": 3.573,
+   "end_sec": 4.19,
+   "duration_ms": 617
+  },
+  {
+   "id": 7,
+   "word": "আমরা",
+   "start_ms": 5480,
+   "end_ms": 5990,
+   "start_sec": 5.48,
+   "end_sec": 5.99,
+   "duration_ms": 510
+  },
+  {
+   "id": 8,
+   "word": "জেনেছি",
+   "start_ms": 6010,
+   "end_ms": 6710,
+   "start_sec": 6.01,
+   "end_sec": 6.71,
+   "duration_ms": 700
+  },
+  {
+   "id": 9,
+   "word": "ষোলোটি",
+   "start_ms": 6730,
+   "end_ms": 7150,
+   "start_sec": 6.73,
+   "end_sec": 7.15,
+   "duration_ms": 420
+  },
+  {
+   "id": 10,
+   "word": "সুন্নাহ",
+   "start_ms": 7170,
+   "end_ms": 7730,
+   "start_sec": 7.17,
+   "end_sec": 7.73,
+   "duration_ms": 560
+  },
+  {
+   "id": 11,
+   "word": "এর",
+   "start_ms": 7750,
+   "end_ms": 8186,
+   "start_sec": 7.75,
+   "end_sec": 8.186,
+   "duration_ms": 436
+  },
+  {
+   "id": 12,
+   "word": "মধ্যে",
+   "start_ms": 8206,
+   "end_ms": 8610,
+   "start_sec": 8.206,
+   "end_sec": 8.61,
+   "duration_ms": 404
+  },
+  {
+   "id": 13,
+   "word": "চারটি",
+   "start_ms": 9260,
+   "end_ms": 10100,
+   "start_sec": 9.26,
+   "end_sec": 10.1,
+   "duration_ms": 840
+  },
+  {
+   "id": 14,
+   "word": "জেনেছি",
+   "start_ms": 10120,
+   "end_ms": 10980,
+   "start_sec": 10.12,
+   "end_sec": 10.98,
+   "duration_ms": 860
+  },
+  {
+   "id": 15,
+   "word": "আজকে",
+   "start_ms": 11470,
+   "end_ms": 12110,
+   "start_sec": 11.47,
+   "end_sec": 12.11,
+   "duration_ms": 640
+  },
+  {
+   "id": 16,
+   "word": "আমরা",
+   "start_ms": 12130,
+   "end_ms": 12800,
+   "start_sec": 12.13,
+   "end_sec": 12.8,
+   "duration_ms": 670
+  },
+  {
+   "id": 17,
+   "word": "পরবর্তী",
+   "start_ms": 13060,
+   "end_ms": 13650,
+   "start_sec": 13.06,
+   "end_sec": 13.65,
+   "duration_ms": 590
+  },
+  {
+   "id": 18,
+   "word": "চারটি",
+   "start_ms": 13670,
+   "end_ms": 14100,
+   "start_sec": 13.67,
+   "end_sec": 14.1,
+   "duration_ms": 430
+  },
+  {
+   "id": 19,
+   "word": "জানবো",
+   "start_ms": 14120,
+   "end_ms": 14710,
+   "start_sec": 14.12,
+   "end_sec": 14.71,
+   "duration_ms": 590
+  },
+  {
+   "id": 20,
+   "word": "আসুন",
+   "start_ms": 15220,
+   "end_ms": 15550,
+   "start_sec": 15.22,
+   "end_sec": 15.55,
+   "duration_ms": 330
+  },
+  {
+   "id": 21,
+   "word": "জেনে",
+   "start_ms": 15570,
+   "end_ms": 15803,
+   "start_sec": 15.57,
+   "end_sec": 15.803,
+   "duration_ms": 233
+  },
+  {
+   "id": 22,
+   "word": "নিই",
+   "start_ms": 15823,
+   "end_ms": 16070,
+   "start_sec": 15.823,
+   "end_sec": 16.07,
+   "duration_ms": 247
+  },
+  {
+   "id": 23,
+   "word": "ইস্তেঞ্জার",
+   "start_ms": 16370,
+   "end_ms": 16890,
+   "start_sec": 16.37,
+   "end_sec": 16.89,
+   "duration_ms": 520
+  },
+  {
+   "id": 24,
+   "word": "সুন্নাহ",
+   "start_ms": 16910,
+   "end_ms": 17220,
+   "start_sec": 16.91,
+   "end_sec": 17.22,
+   "duration_ms": 310
+  },
+  {
+   "id": 25,
+   "word": "পরবর্তী",
+   "start_ms": 19000,
+   "end_ms": 19440,
+   "start_sec": 19.0,
+   "end_sec": 19.44,
+   "duration_ms": 440
+  },
+  {
+   "id": 26,
+   "word": "চারটির",
+   "start_ms": 19460,
+   "end_ms": 20050,
+   "start_sec": 19.46,
+   "end_sec": 20.05,
+   "duration_ms": 590
+  },
+  {
+   "id": 27,
+   "word": "মধ্যে",
+   "start_ms": 20070,
+   "end_ms": 20330,
+   "start_sec": 20.07,
+   "end_sec": 20.33,
+   "duration_ms": 260
+  },
+  {
+   "id": 28,
+   "word": "এক",
+   "start_ms": 20690,
+   "end_ms": 20990,
+   "start_sec": 20.69,
+   "end_sec": 20.99,
+   "duration_ms": 300
+  },
+  {
+   "id": 29,
+   "word": "নাম্বার",
+   "start_ms": 21010,
+   "end_ms": 21260,
+   "start_sec": 21.01,
+   "end_sec": 21.26,
+   "duration_ms": 250
+  },
+  {
+   "id": 30,
+   "word": "হলো",
+   "start_ms": 21280,
+   "end_ms": 21640,
+   "start_sec": 21.28,
+   "end_sec": 21.64,
+   "duration_ms": 360
+  },
+  {
+   "id": 31,
+   "word": "কেবলার",
+   "start_ms": 23190,
+   "end_ms": 23700,
+   "start_sec": 23.19,
+   "end_sec": 23.7,
+   "duration_ms": 510
+  },
+  {
+   "id": 32,
+   "word": "দিকে",
+   "start_ms": 23720,
+   "end_ms": 24040,
+   "start_sec": 23.72,
+   "end_sec": 24.04,
+   "duration_ms": 320
+  },
+  {
+   "id": 33,
+   "word": "মুখ",
+   "start_ms": 24060,
+   "end_ms": 24315,
+   "start_sec": 24.06,
+   "end_sec": 24.315,
+   "duration_ms": 255
+  },
+  {
+   "id": 34,
+   "word": "করিয়া",
+   "start_ms": 24335,
+   "end_ms": 24770,
+   "start_sec": 24.335,
+   "end_sec": 24.77,
+   "duration_ms": 435
+  },
+  {
+   "id": 35,
+   "word": "বা",
+   "start_ms": 24790,
+   "end_ms": 24920,
+   "start_sec": 24.79,
+   "end_sec": 24.92,
+   "duration_ms": 130
+  },
+  {
+   "id": 36,
+   "word": "পিঠ",
+   "start_ms": 24940,
+   "end_ms": 25150,
+   "start_sec": 24.94,
+   "end_sec": 25.15,
+   "duration_ms": 210
+  },
+  {
+   "id": 37,
+   "word": "করিয়া",
+   "start_ms": 25170,
+   "end_ms": 25560,
+   "start_sec": 25.17,
+   "end_sec": 25.56,
+   "duration_ms": 390
+  },
+  {
+   "id": 38,
+   "word": "না",
+   "start_ms": 25580,
+   "end_ms": 25794,
+   "start_sec": 25.58,
+   "end_sec": 25.794,
+   "duration_ms": 214
+  },
+  {
+   "id": 39,
+   "word": "বসা",
+   "start_ms": 25814,
+   "end_ms": 26110,
+   "start_sec": 25.814,
+   "end_sec": 26.11,
+   "duration_ms": 296
+  },
+  {
+   "id": 40,
+   "word": "দুই",
+   "start_ms": 27080,
+   "end_ms": 27410,
+   "start_sec": 27.08,
+   "end_sec": 27.41,
+   "duration_ms": 330
+  },
+  {
+   "id": 41,
+   "word": "নাম্বার",
+   "start_ms": 27430,
+   "end_ms": 27879,
+   "start_sec": 27.43,
+   "end_sec": 27.879,
+   "duration_ms": 449
+  },
+  {
+   "id": 42,
+   "word": "হলো",
+   "start_ms": 27899,
+   "end_ms": 28320,
+   "start_sec": 27.899,
+   "end_sec": 28.32,
+   "duration_ms": 421
+  },
+  {
+   "id": 43,
+   "word": "যথাসম্ভব",
+   "start_ms": 28340,
+   "end_ms": 29030,
+   "start_sec": 28.34,
+   "end_sec": 29.03,
+   "duration_ms": 690
+  },
+  {
+   "id": 44,
+   "word": "বসার",
+   "start_ms": 29050,
+   "end_ms": 29500,
+   "start_sec": 29.05,
+   "end_sec": 29.5,
+   "duration_ms": 450
+  },
+  {
+   "id": 45,
+   "word": "নিকটবর্তী",
+   "start_ms": 29520,
+   "end_ms": 30170,
+   "start_sec": 29.52,
+   "end_sec": 30.17,
+   "duration_ms": 650
+  },
+  {
+   "id": 46,
+   "word": "হইয়া",
+   "start_ms": 30190,
+   "end_ms": 30750,
+   "start_sec": 30.19,
+   "end_sec": 30.75,
+   "duration_ms": 560
+  },
+  {
+   "id": 47,
+   "word": "সতর",
+   "start_ms": 31220,
+   "end_ms": 31580,
+   "start_sec": 31.22,
+   "end_sec": 31.58,
+   "duration_ms": 360
+  },
+  {
+   "id": 48,
+   "word": "ঢাকা",
+   "start_ms": 31600,
+   "end_ms": 31948,
+   "start_sec": 31.6,
+   "end_sec": 31.948,
+   "duration_ms": 348
+  },
+  {
+   "id": 49,
+   "word": "এবং",
+   "start_ms": 31968,
+   "end_ms": 32200,
+   "start_sec": 31.968,
+   "end_sec": 32.2,
+   "duration_ms": 232
+  },
+  {
+   "id": 50,
+   "word": "বসিয়া",
+   "start_ms": 32220,
+   "end_ms": 32720,
+   "start_sec": 32.22,
+   "end_sec": 32.72,
+   "duration_ms": 500
+  },
+  {
+   "id": 51,
+   "word": "প্রস্রাব",
+   "start_ms": 32740,
+   "end_ms": 33170,
+   "start_sec": 32.74,
+   "end_sec": 33.17,
+   "duration_ms": 430
+  },
+  {
+   "id": 52,
+   "word": "পায়খানা",
+   "start_ms": 33190,
+   "end_ms": 33770,
+   "start_sec": 33.19,
+   "end_sec": 33.77,
+   "duration_ms": 580
+  },
+  {
+   "id": 53,
+   "word": "করা",
+   "start_ms": 33790,
+   "end_ms": 34040,
+   "start_sec": 33.79,
+   "end_sec": 34.04,
+   "duration_ms": 250
+  },
+  {
+   "id": 54,
+   "word": "দাঁড়িয়ে",
+   "start_ms": 34580,
+   "end_ms": 34900,
+   "start_sec": 34.58,
+   "end_sec": 34.9,
+   "duration_ms": 320
+  },
+  {
+   "id": 55,
+   "word": "প্রস্রাব",
+   "start_ms": 34920,
+   "end_ms": 35210,
+   "start_sec": 34.92,
+   "end_sec": 35.21,
+   "duration_ms": 290
+  },
+  {
+   "id": 56,
+   "word": "না",
+   "start_ms": 35230,
+   "end_ms": 35460,
+   "start_sec": 35.23,
+   "end_sec": 35.46,
+   "duration_ms": 230
+  },
+  {
+   "id": 57,
+   "word": "করা",
+   "start_ms": 35480,
+   "end_ms": 35690,
+   "start_sec": 35.48,
+   "end_sec": 35.69,
+   "duration_ms": 210
+  },
+  {
+   "id": 58,
+   "word": "তিন",
+   "start_ms": 36250,
+   "end_ms": 36590,
+   "start_sec": 36.25,
+   "end_sec": 36.59,
+   "duration_ms": 340
+  },
+  {
+   "id": 59,
+   "word": "নাম্বার",
+   "start_ms": 36610,
+   "end_ms": 36780,
+   "start_sec": 36.61,
+   "end_sec": 36.78,
+   "duration_ms": 170
+  },
+  {
+   "id": 60,
+   "word": "হলো",
+   "start_ms": 36800,
+   "end_ms": 37190,
+   "start_sec": 36.8,
+   "end_sec": 37.19,
+   "duration_ms": 390
+  },
+  {
+   "id": 61,
+   "word": "নাপাক",
+   "start_ms": 38740,
+   "end_ms": 39220,
+   "start_sec": 38.74,
+   "end_sec": 39.22,
+   "duration_ms": 480
+  },
+  {
+   "id": 62,
+   "word": "পানি",
+   "start_ms": 39240,
+   "end_ms": 39470,
+   "start_sec": 39.24,
+   "end_sec": 39.47,
+   "duration_ms": 230
+  },
+  {
+   "id": 63,
+   "word": "অথবা",
+   "start_ms": 39490,
+   "end_ms": 40020,
+   "start_sec": 39.49,
+   "end_sec": 40.02,
+   "duration_ms": 530
+  },
+  {
+   "id": 64,
+   "word": "প্রস্রাব",
+   "start_ms": 40040,
+   "end_ms": 40510,
+   "start_sec": 40.04,
+   "end_sec": 40.51,
+   "duration_ms": 470
+  },
+  {
+   "id": 65,
+   "word": "হইতে",
+   "start_ms": 40530,
+   "end_ms": 41090,
+   "start_sec": 40.53,
+   "end_sec": 41.09,
+   "duration_ms": 560
+  },
+  {
+   "id": 66,
+   "word": "সতর্কতার",
+   "start_ms": 41110,
+   "end_ms": 41870,
+   "start_sec": 41.11,
+   "end_sec": 41.87,
+   "duration_ms": 760
+  },
+  {
+   "id": 67,
+   "word": "সহিত",
+   "start_ms": 41890,
+   "end_ms": 42280,
+   "start_sec": 41.89,
+   "end_sec": 42.28,
+   "duration_ms": 390
+  },
+  {
+   "id": 68,
+   "word": "বাঁচিয়া",
+   "start_ms": 42660,
+   "end_ms": 42960,
+   "start_sec": 42.66,
+   "end_sec": 42.96,
+   "duration_ms": 300
+  },
+  {
+   "id": 69,
+   "word": "থাকা",
+   "start_ms": 42980,
+   "end_ms": 43310,
+   "start_sec": 42.98,
+   "end_sec": 43.31,
+   "duration_ms": 330
+  },
+  {
+   "id": 70,
+   "word": "চার",
+   "start_ms": 43990,
+   "end_ms": 44320,
+   "start_sec": 43.99,
+   "end_sec": 44.32,
+   "duration_ms": 330
+  },
+  {
+   "id": 71,
+   "word": "নাম্বার",
+   "start_ms": 44340,
+   "end_ms": 44643,
+   "start_sec": 44.34,
+   "end_sec": 44.643,
+   "duration_ms": 303
+  },
+  {
+   "id": 72,
+   "word": "হলো",
+   "start_ms": 44663,
+   "end_ms": 44940,
+   "start_sec": 44.663,
+   "end_sec": 44.94,
+   "duration_ms": 277
+  },
+  {
+   "id": 73,
+   "word": "প্রস্রাব",
+   "start_ms": 45640,
+   "end_ms": 45990,
+   "start_sec": 45.64,
+   "end_sec": 45.99,
+   "duration_ms": 350
+  },
+  {
+   "id": 74,
+   "word": "পায়খানা",
+   "start_ms": 46010,
+   "end_ms": 46550,
+   "start_sec": 46.01,
+   "end_sec": 46.55,
+   "duration_ms": 540
+  },
+  {
+   "id": 75,
+   "word": "শেষে",
+   "start_ms": 46570,
+   "end_ms": 46970,
+   "start_sec": 46.57,
+   "end_sec": 46.97,
+   "duration_ms": 400
+  },
+  {
+   "id": 76,
+   "word": "ঢিলা",
+   "start_ms": 46990,
+   "end_ms": 47250,
+   "start_sec": 46.99,
+   "end_sec": 47.25,
+   "duration_ms": 260
+  },
+  {
+   "id": 77,
+   "word": "কুলুপ",
+   "start_ms": 47480,
+   "end_ms": 47790,
+   "start_sec": 47.48,
+   "end_sec": 47.79,
+   "duration_ms": 310
+  },
+  {
+   "id": 78,
+   "word": "ও",
+   "start_ms": 47810,
+   "end_ms": 48000,
+   "start_sec": 47.81,
+   "end_sec": 48.0,
+   "duration_ms": 190
+  },
+  {
+   "id": 79,
+   "word": "পানি",
+   "start_ms": 48020,
+   "end_ms": 48410,
+   "start_sec": 48.02,
+   "end_sec": 48.41,
+   "duration_ms": 390
+  },
+  {
+   "id": 80,
+   "word": "ব্যবহারের",
+   "start_ms": 48430,
+   "end_ms": 49010,
+   "start_sec": 48.43,
+   "end_sec": 49.01,
+   "duration_ms": 580
+  },
+  {
+   "id": 81,
+   "word": "আগে",
+   "start_ms": 49030,
+   "end_ms": 49220,
+   "start_sec": 49.03,
+   "end_sec": 49.22,
+   "duration_ms": 190
+  },
+  {
+   "id": 82,
+   "word": "ঢিলা",
+   "start_ms": 49240,
+   "end_ms": 49540,
+   "start_sec": 49.24,
+   "end_sec": 49.54,
+   "duration_ms": 300
+  },
+  {
+   "id": 83,
+   "word": "কুলুপ",
+   "start_ms": 49560,
+   "end_ms": 49910,
+   "start_sec": 49.56,
+   "end_sec": 49.91,
+   "duration_ms": 350
+  },
+  {
+   "id": 84,
+   "word": "অথবা",
+   "start_ms": 49930,
+   "end_ms": 50320,
+   "start_sec": 49.93,
+   "end_sec": 50.32,
+   "duration_ms": 390
+  },
+  {
+   "id": 85,
+   "word": "টয়লেট",
+   "start_ms": 50500,
+   "end_ms": 51050,
+   "start_sec": 50.5,
+   "end_sec": 51.05,
+   "duration_ms": 550
+  },
+  {
+   "id": 86,
+   "word": "পেপার",
+   "start_ms": 51490,
+   "end_ms": 51950,
+   "start_sec": 51.49,
+   "end_sec": 51.95,
+   "duration_ms": 460
+  },
+  {
+   "id": 87,
+   "word": "ব্যবহার",
+   "start_ms": 51970,
+   "end_ms": 52510,
+   "start_sec": 51.97,
+   "end_sec": 52.51,
+   "duration_ms": 540
+  },
+  {
+   "id": 88,
+   "word": "করা",
+   "start_ms": 52530,
+   "end_ms": 52700,
+   "start_sec": 52.53,
+   "end_sec": 52.7,
+   "duration_ms": 170
+  },
+  {
+   "id": 89,
+   "word": "এই",
+   "start_ms": 54600,
+   "end_ms": 55050,
+   "start_sec": 54.6,
+   "end_sec": 55.05,
+   "duration_ms": 450
+  },
+  {
+   "id": 90,
+   "word": "চারটি",
+   "start_ms": 55070,
+   "end_ms": 55360,
+   "start_sec": 55.07,
+   "end_sec": 55.36,
+   "duration_ms": 290
+  },
+  {
+   "id": 91,
+   "word": "হলো",
+   "start_ms": 55380,
+   "end_ms": 55840,
+   "start_sec": 55.38,
+   "end_sec": 55.84,
+   "duration_ms": 460
+  },
+  {
+   "id": 92,
+   "word": "ইস্তেঞ্জার",
+   "start_ms": 57040,
+   "end_ms": 57670,
+   "start_sec": 57.04,
+   "end_sec": 57.67,
+   "duration_ms": 630
+  },
+  {
+   "id": 93,
+   "word": "পরবর্তী",
+   "start_ms": 57690,
+   "end_ms": 58230,
+   "start_sec": 57.69,
+   "end_sec": 58.23,
+   "duration_ms": 540
+  },
+  {
+   "id": 94,
+   "word": "চারটি",
+   "start_ms": 58250,
+   "end_ms": 58600,
+   "start_sec": 58.25,
+   "end_sec": 58.6,
+   "duration_ms": 350
+  },
+  {
+   "id": 95,
+   "word": "সুন্নার",
+   "start_ms": 58620,
+   "end_ms": 59090,
+   "start_sec": 58.62,
+   "end_sec": 59.09,
+   "duration_ms": 470
+  },
+  {
+   "id": 96,
+   "word": "মধ্যে",
+   "start_ms": 59110,
+   "end_ms": 59500,
+   "start_sec": 59.11,
+   "end_sec": 59.5,
+   "duration_ms": 390
+  },
+  {
+   "id": 97,
+   "word": "এর",
+   "start_ms": 59710,
+   "end_ms": 60020,
+   "start_sec": 59.71,
+   "end_sec": 60.02,
+   "duration_ms": 310
+  },
+  {
+   "id": 98,
+   "word": "অন্যতম",
+   "start_ms": 60290,
+   "end_ms": 60730,
+   "start_sec": 60.29,
+   "end_sec": 60.73,
+   "duration_ms": 440
+  },
+  {
+   "id": 99,
+   "word": "চারটি",
+   "start_ms": 60750,
+   "end_ms": 61130,
+   "start_sec": 60.75,
+   "end_sec": 61.13,
+   "duration_ms": 380
+  },
+  {
+   "id": 100,
+   "word": "সুন্নাহ",
+   "start_ms": 61150,
+   "end_ms": 61430,
+   "start_sec": 61.15,
+   "end_sec": 61.43,
+   "duration_ms": 280
+  },
+  {
+   "id": 101,
+   "word": "ষোলোটি",
+   "start_ms": 62220,
+   "end_ms": 62710,
+   "start_sec": 62.22,
+   "end_sec": 62.71,
+   "duration_ms": 490
+  },
+  {
+   "id": 102,
+   "word": "সুন্নার",
+   "start_ms": 62730,
+   "end_ms": 63130,
+   "start_sec": 62.73,
+   "end_sec": 63.13,
+   "duration_ms": 400
+  },
+  {
+   "id": 103,
+   "word": "মধ্যে",
+   "start_ms": 63150,
+   "end_ms": 63339,
+   "start_sec": 63.15,
+   "end_sec": 63.339,
+   "duration_ms": 189
+  },
+  {
+   "id": 104,
+   "word": "অন্যতম",
+   "start_ms": 63359,
+   "end_ms": 63910,
+   "start_sec": 63.359,
+   "end_sec": 63.91,
+   "duration_ms": 551
+  },
+  {
+   "id": 105,
+   "word": "চারটি",
+   "start_ms": 64410,
+   "end_ms": 64980,
+   "start_sec": 64.41,
+   "end_sec": 64.98,
+   "duration_ms": 570
+  },
+  {
+   "id": 106,
+   "word": "সুন্নাহ",
+   "start_ms": 65000,
+   "end_ms": 65720,
+   "start_sec": 65.0,
+   "end_sec": 65.72,
+   "duration_ms": 720
+  },
+  {
+   "id": 107,
+   "word": "বাকি",
+   "start_ms": 66690,
+   "end_ms": 66910,
+   "start_sec": 66.69,
+   "end_sec": 66.91,
+   "duration_ms": 220
+  },
+  {
+   "id": 108,
+   "word": "রইলো",
+   "start_ms": 66930,
+   "end_ms": 67410,
+   "start_sec": 66.93,
+   "end_sec": 67.41,
+   "duration_ms": 480
+  },
+  {
+   "id": 109,
+   "word": "আর",
+   "start_ms": 67680,
+   "end_ms": 67850,
+   "start_sec": 67.68,
+   "end_sec": 67.85,
+   "duration_ms": 170
+  },
+  {
+   "id": 110,
+   "word": "আটটি",
+   "start_ms": 67870,
+   "end_ms": 68260,
+   "start_sec": 67.87,
+   "end_sec": 68.26,
+   "duration_ms": 390
+  },
+  {
+   "id": 111,
+   "word": "সুন্নাহ",
+   "start_ms": 68280,
+   "end_ms": 68760,
+   "start_sec": 68.28,
+   "end_sec": 68.76,
+   "duration_ms": 480
+  },
+  {
+   "id": 112,
+   "word": "পর্ব",
+   "start_ms": 70150,
+   "end_ms": 70430,
+   "start_sec": 70.15,
+   "end_sec": 70.43,
+   "duration_ms": 280
+  },
+  {
+   "id": 113,
+   "word": "আকারে",
+   "start_ms": 70450,
+   "end_ms": 70870,
+   "start_sec": 70.45,
+   "end_sec": 70.87,
+   "duration_ms": 420
+  },
+  {
+   "id": 114,
+   "word": "বাকি",
+   "start_ms": 70890,
+   "end_ms": 71350,
+   "start_sec": 70.89,
+   "end_sec": 71.35,
+   "duration_ms": 460
+  },
+  {
+   "id": 115,
+   "word": "আটটি",
+   "start_ms": 71370,
+   "end_ms": 71630,
+   "start_sec": 71.37,
+   "end_sec": 71.63,
+   "duration_ms": 260
+  },
+  {
+   "id": 116,
+   "word": "সুন্নাহ",
+   "start_ms": 71650,
+   "end_ms": 72050,
+   "start_sec": 71.65,
+   "end_sec": 72.05,
+   "duration_ms": 400
+  },
+  {
+   "id": 117,
+   "word": "জানার",
+   "start_ms": 72070,
+   "end_ms": 72680,
+   "start_sec": 72.07,
+   "end_sec": 72.68,
+   "duration_ms": 610
+  },
+  {
+   "id": 118,
+   "word": "জন্য",
+   "start_ms": 72700,
+   "end_ms": 73010,
+   "start_sec": 72.7,
+   "end_sec": 73.01,
+   "duration_ms": 310
+  },
+  {
+   "id": 119,
+   "word": "MDMK",
+   "start_ms": 73030,
+   "end_ms": 73360,
+   "start_sec": 73.03,
+   "end_sec": 73.36,
+   "duration_ms": 330
+  },
+  {
+   "id": 120,
+   "word": "এর",
+   "start_ms": 73940,
+   "end_ms": 74284,
+   "start_sec": 73.94,
+   "end_sec": 74.284,
+   "duration_ms": 344
+  },
+  {
+   "id": 121,
+   "word": "সাথে",
+   "start_ms": 74304,
+   "end_ms": 74730,
+   "start_sec": 74.304,
+   "end_sec": 74.73,
+   "duration_ms": 426
+  },
+  {
+   "id": 122,
+   "word": "থাকুন",
+   "start_ms": 74750,
+   "end_ms": 75190,
+   "start_sec": 74.75,
+   "end_sec": 75.19,
+   "duration_ms": 440
+  },
+  {
+   "id": 123,
+   "word": "আসসালামু",
+   "start_ms": 75770,
+   "end_ms": 76405,
+   "start_sec": 75.77,
+   "end_sec": 76.405,
+   "duration_ms": 635
+  },
+  {
+   "id": 124,
+   "word": "আলাইকুম",
+   "start_ms": 76425,
+   "end_ms": 77080,
+   "start_sec": 76.425,
+   "end_sec": 77.08,
+   "duration_ms": 655
+  },
+  {
+   "id": 125,
+   "word": "ওয়া",
+   "start_ms": 77390,
+   "end_ms": 77660,
+   "start_sec": 77.39,
+   "end_sec": 77.66,
+   "duration_ms": 270
+  },
+  {
+   "id": 126,
+   "word": "রহমাতুল্লাহি",
+   "start_ms": 77680,
+   "end_ms": 78540,
+   "start_sec": 77.68,
+   "end_sec": 78.54,
+   "duration_ms": 860
+  },
+  {
+   "id": 127,
+   "word": "ওয়া",
+   "start_ms": 78720,
+   "end_ms": 78942,
+   "start_sec": 78.72,
+   "end_sec": 78.942,
+   "duration_ms": 222
+  },
+  {
+   "id": 128,
+   "word": "বারাকাতুহু",
+   "start_ms": 78962,
+   "end_ms": 79520,
+   "start_sec": 78.962,
+   "end_sec": 79.52,
+   "duration_ms": 558
+  }
+ ]
+}

@@ -35,8 +35,8 @@ export const DEBUG_SCENES = false;
 
 /* ব্র্যান্ড/লেখা */
 export const CHANNEL_NAME = 'MDMK';
-export const SERIES_CHIP = '১৬ সুন্নাহ • ইস্তেঞ্জা';
-export const TOPIC_TITLE = 'ইস্তেঞ্জা সুন্নাহ';
+export const SERIES_CHIP = '১৬ সুন্নাত • ইস্তেঞ্জার';
+export const TOPIC_TITLE = 'ইস্তেঞ্জার সুন্নাত';
 
 /* ------------------------------------------------------------------ */
 /* ৩.২ রঙ                                                              */
@@ -272,18 +272,18 @@ interface SceneSpec {
 const SCENE_OVERLAP = 3;
 
 const SCENE_SPECS: readonly SceneSpec[] = [
-  {id: 'S1', first: 0, last: 1, lead: 99, tail: 8, title: 'সালাম', layout: 'A'},
-  {id: 'S2', first: 2, last: 8, lead: 3, tail: 8, title: 'সিরিজ রিক্যাপ', layout: 'A'},
-  {id: 'S3', first: 9, last: 24, lead: 5, tail: 30, title: 'আজকের বিষয়', layout: 'B'},
-  {id: 'S4', first: 25, last: 30, lead: 5, tail: 8, title: 'পরবর্তী ৪টি (লিড-ইন)', layout: 'A'},
-  {id: 'S5', first: 31, last: 39, lead: 33, tail: 8, title: 'সুন্নাহ ১', layout: 'A'},
-  {id: 'S6', first: 40, last: 57, lead: 0, tail: 8, title: 'সুন্নাহ ২', layout: 'A'},
-  {id: 'S7', first: 58, last: 69, lead: 2, tail: 8, title: 'সুন্নাহ ৩', layout: 'A'},
-  {id: 'S8', first: 70, last: 88, lead: 2, tail: 8, title: 'সুন্নাহ ৪', layout: 'B'},
-  {id: 'S9', first: 89, last: 100, lead: 5, tail: 8, title: 'সারাংশ', layout: 'A'},
-  {id: 'S10', first: 101, last: 111, lead: 5, tail: 8, title: 'বাকি ৮টি', layout: 'B'},
-  {id: 'S11', first: 112, last: 124, lead: 5, tail: 8, title: 'CTA', layout: 'A'},
-  {id: 'S12', first: 125, last: 128, lead: 5, tail: 999, title: 'বিদায়', layout: 'A'},
+  {id: 'S1', first: 0, last: 5, lead: 99, tail: 8, title: 'সালাম', layout: 'A'},
+  {id: 'S2', first: 6, last: 12, lead: 3, tail: 8, title: 'সিরিজ রিক্যাপ', layout: 'A'},
+  {id: 'S3', first: 13, last: 29, lead: 5, tail: 30, title: 'আজকের বিষয়', layout: 'B'},
+  {id: 'S4', first: 30, last: 35, lead: 5, tail: 8, title: 'পরবর্তী ৪টি (লিড-ইন)', layout: 'A'},
+  {id: 'S5', first: 36, last: 44, lead: 33, tail: 8, title: 'সুন্নাত ১', layout: 'A'},
+  {id: 'S6', first: 45, last: 62, lead: 0, tail: 8, title: 'সুন্নাত ২', layout: 'A'},
+  {id: 'S7', first: 63, last: 75, lead: 2, tail: 8, title: 'সুন্নাত ৩', layout: 'A'},
+  {id: 'S8', first: 76, last: 91, lead: 2, tail: 8, title: 'সুন্নাত ৪', layout: 'B'},
+  {id: 'S9', first: 92, last: 101, lead: 5, tail: 8, title: 'সারাংশ', layout: 'A'},
+  {id: 'S10', first: 102, last: 113, lead: 5, tail: 8, title: 'বাকি ৮টি', layout: 'B'},
+  {id: 'S11', first: 114, last: 127, lead: 5, tail: 8, title: 'CTA', layout: 'A'},
+  {id: 'S12', first: 128, last: 131, lead: 5, tail: 999, title: 'বিদায়', layout: 'A'},
 ];
 
 export const SCENES: readonly SceneDef[] = SCENE_SPECS.map((spec, i, all) => {
@@ -348,69 +348,69 @@ export const layoutBProgress = (frame: number): number => {
  * mdmktimestamp.json (অডিও-মাপা) থেকে আসে, তাই হাতে সংখ্যা বসাতে হয় না।
  */
 export const KEY_MS = {
-  /** "ষোলোটি" (id 9) */
-  sixteen: wStart(9),
-  /** "চারটি জেনেছি" (id 13) */
-  fourKnown: wStart(13),
-  /** "পরবর্তী চারটি জানবো" (id 17) */
-  nextFour: wStart(17),
-  /** "ইস্তেঞ্জার সুন্নাহ" (id 23) */
-  istenjaTitle: wStart(23),
-  /** "এক নাম্বার হলো" (id 28) */
-  oneNumber: wStart(28),
-  /** সুন্নাহ ১ — "কেবলার" (id 31) */
-  p1Start: wStart(31),
-  /** "মুখ" (id 33) */
-  p1Face: wStart(33),
-  /** "পিঠ" (id 36) */
-  p1Back: wStart(36),
-  /** "দুই নাম্বার হলো" (id 40) */
-  twoNumber: wStart(40),
-  /** ২ক — "যথাসম্ভব" (id 43) */
-  p2aStart: wStart(43),
-  /** ২খ — "বসিয়া" (id 50) */
-  p2bStart: wStart(50),
-  /** ২গ — "দাঁড়িয়ে" (id 54) */
-  p2cStart: wStart(54),
-  /** "তিন নাম্বার হলো" (id 58) */
-  threeNumber: wStart(58),
-  /** নীরবতা শুরু (শেষ শব্দ "হলো" id 60 শেষ) / শেষ (পরের শব্দ "নাপাক" id 61 শুরু) */
-  silenceAStart: wEnd(60),
-  silenceAEnd: wStart(61),
-  /** সুন্নাহ ৩ — "নাপাক" (id 61) */
-  p3Start: wStart(61),
-  /** "সতর্কতার" (id 66) */
-  p3Care: wStart(66),
-  /** "চার নাম্বার হলো" (id 70) */
-  fourNumber: wStart(70),
-  /** ৪ক — "প্রস্রাব পায়খানা শেষে ঢিলা কুলুপ" (id 73) */
-  p4aStart: wStart(73),
-  /** "পানি" (id 79) */
-  p4Water: wStart(79),
-  /** ৪খ — "আগে ঢিলা কুলুপ" (id 81) */
-  p4bStart: wStart(81),
-  /** "অথবা" (id 84) */
-  p4Or: wStart(84),
-  /** নীরবতা ২ শুরু (শেষ শব্দ "করা" id 88 শেষ) */
-  silenceBStart: wEnd(88),
-  /** "এই চারটি হলো" (id 89) */
-  summaryStart: wStart(89),
-  /** "ইস্তেঞ্জার পরবর্তী চারটি সুন্নার মধ্যে" (id 92) */
-  summaryNextFour: wStart(92),
-  /** "ষোলোটি সুন্নার মধ্যে অন্যতম চারটি" (id 101) */
-  remainStart: wStart(101),
-  /** "আটটি সুন্নাহ" (id 110) */
-  eightLeft: wStart(110),
-  /** "পর্ব আকারে" (id 112) */
-  partsStart: wStart(112),
-  /** "MDMK" (id 119) */
-  mdmkWord: wStart(119),
-  /** শেষ সালাম ১ম অংশ "আসসালামু আলাইকুম" (id 123) */
-  salamEndStart: wStart(123),
-  /** শেষ সালাম ২য় অংশ "ওয়া রহমাতুল্লাহি …" (id 125) */
-  salamEnd2Start: wStart(125),
-  /** শেষ শব্দ শেষ (id 128) */
-  endMs: wEnd(128),
+  /** "১৬টি" (id 15) — "ইস্তেঞ্জার সুন্নাত ১৬টি" */
+  sixteen: wStart(15),
+  /** "৪টি জেনেছি" (id 18) */
+  fourKnown: wStart(18),
+  /** "পরবর্তী ৪টি জানবো" (id 22) */
+  nextFour: wStart(22),
+  /** "ইস্তেঞ্জার সুন্নাত" (id 28) */
+  istenjaTitle: wStart(28),
+  /** "১ নম্বর হলো" (id 33) */
+  oneNumber: wStart(33),
+  /** সুন্নাত ১ — "কেবলার" (id 36) */
+  p1Start: wStart(36),
+  /** "মুখ" (id 38) */
+  p1Face: wStart(38),
+  /** "পিঠ" (id 41) */
+  p1Back: wStart(41),
+  /** "২ নম্বর হলো" (id 45) */
+  twoNumber: wStart(45),
+  /** ২ক — "যথাসম্ভব" (id 48) */
+  p2aStart: wStart(48),
+  /** ২খ — "বসে" (id 55) */
+  p2bStart: wStart(55),
+  /** ২গ — "দাঁড়িয়ে" (id 59) */
+  p2cStart: wStart(59),
+  /** "৩ নম্বর হলো" (id 63) */
+  threeNumber: wStart(63),
+  /** নীরবতা শুরু (শেষ শব্দ "হলো" id 65 শেষ) / শেষ (পরের শব্দ "নাপাক" id 66 শুরু) */
+  silenceAStart: wEnd(65),
+  silenceAEnd: wStart(66),
+  /** সুন্নাত ৩ — "নাপাক" (id 66) */
+  p3Start: wStart(66),
+  /** "সতর্কতা" (id 72) */
+  p3Care: wStart(72),
+  /** "৪ নম্বর হলো" (id 76) */
+  fourNumber: wStart(76),
+  /** ৪ক — "প্রস্রাব পায়খানা শেষে ঢিলা-কুলুখ" (id 79) */
+  p4aStart: wStart(79),
+  /** "পানি" (id 83) */
+  p4Water: wStart(83),
+  /** ৪খ — "আগে ঢিলা-কুলুখ" (id 85) */
+  p4bStart: wStart(85),
+  /** "অথবা" (id 87) */
+  p4Or: wStart(87),
+  /** নীরবতা ২ শুরু (শেষ শব্দ "করা" id 91 শেষ) */
+  silenceBStart: wEnd(91),
+  /** "এই ৪টি হলো" (id 92) */
+  summaryStart: wStart(92),
+  /** "ইস্তেঞ্জার পরবর্তী ৪টি সুন্নাত" (id 95) */
+  summaryNextFour: wStart(95),
+  /** "ইস্তেঞ্জার ১৬টি সুন্নাতের মধ্যে" — এখানে "১৬টি" (id 103); সিন S10 শুরু id 102 "ইস্তেঞ্জার" থেকে */
+  remainStart: wStart(103),
+  /** "৮টি সুন্নাত" (id 112) */
+  eightLeft: wStart(112),
+  /** "পর্ব পর্ব আকারে" (id 114) */
+  partsStart: wStart(114),
+  /** "MDMK" (id 122) */
+  mdmkWord: wStart(122),
+  /** শেষ সালাম ১ম অংশ "আসসালামু আলাইকুম" (id 126) */
+  salamEndStart: wStart(126),
+  /** শেষ সালাম ২য় অংশ "ওয়া রাহমাতুল্লাহি …" (id 128) */
+  salamEnd2Start: wStart(128),
+  /** শেষ শব্দ শেষ (id 131) */
+  endMs: wEnd(131),
 } as const;
 
 /** KEY_MS এর ফ্রেম-সংস্করণ (সিন কোডে সরাসরি ব্যবহারযোগ্য) */

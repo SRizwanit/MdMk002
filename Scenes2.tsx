@@ -41,10 +41,10 @@ import {
 /**
  * Scenes2.tsx — ধাপ ৭ এর ২য় ব্যাচ: S5–S8 (mdmk02.md ৭.৫–৭.৮)
  *
- *  ৭.৫ S5 সুন্নাহ ১  (ফ্রেম  548– 660)  Layout A — কেবলার দিকে মুখ বা পিঠ করে না বসা
- *  ৭.৬ S6 সুন্নাহ ২  (ফ্রেম  655– 865)  Layout A — ২ক সতর ঢাকা • ২খ বসে করা • ২গ দাঁড়িয়ে না করা
- *  ৭.৭ S7 সুন্নাহ ৩  (ফ্রেম  862–1065)  Layout A — নাপাক পানি/প্রস্রাব থেকে সতর্কতার সাথে বেঁচে থাকা
- *  ৭.৮ S8 সুন্নাহ ৪  (ফ্রেম 1063–1305)  Layout B — ঢিলা-কুলুপ/টয়লেট পেপার → পানি (প্রবাহ)
+ *  ৭.৫ S5 সুন্নাত ১  (ফ্রেম  548– 660)  Layout A — কেবলার দিকে মুখ বা পিঠ করে না বসা
+ *  ৭.৬ S6 সুন্নাত ২  (ফ্রেম  655– 865)  Layout A — ২ক সতর খোলা • ২খ বসে করা • ২গ দাঁড়িয়ে না করা
+ *  ৭.৭ S7 সুন্নাত ৩  (ফ্রেম  862–1065)  Layout A — নাপাক পানি/প্রস্রাব থেকে সতর্কতার সাথে বেঁচে থাকা
+ *  ৭.৮ S8 সুন্নাত ৪  (ফ্রেম 1063–1305)  Layout B — ঢিলা-কুলুখ/টয়লেট পেপার → পানি (প্রবাহ)
  *
  * সব সময় **লোকাল ফ্রেমে** (সিনের শুরু = ০)। `lf(ms, id)` = JSON এর মিলিসেকেন্ড → ঐ সিনের লোকাল ফ্রেম।
  * গ্রাফিকের কোনো লেখা বক্তার কথার বাইরে নয়; নতুন কোনো তথ্য/হুকুম যোগ হয়নি।
@@ -112,7 +112,7 @@ const pulseGlow = (frame: number, delay: number): number =>
 const CARD_BG = 'linear-gradient(135deg, rgba(18,48,74,0.92) 0%, rgba(11,27,43,0.9) 100%)';
 
 /* ------------------------------------------------------------------ */
-/* ৭.৫ S5 — সুন্নাহ ১ (21.9–26.4s) • Layout A                            */
+/* ৭.৫ S5 — সুন্নাত ১ (21.9–26.4s) • Layout A                            */
 /* ------------------------------------------------------------------ */
 
 /** "মুখ করে ✖" / "পিঠ করে ✖" — নিষেধ-চিপ; `crossAt` এ ক্রস আঁকা হয়ে পপ করে */
@@ -166,7 +166,7 @@ export const Scene5: React.FC = () => {
   const qiblaAt = lf(KEY_MS.p1Start, 'S5');
   const faceAt = lf(KEY_MS.p1Face, 'S5');
   const backAt = lf(KEY_MS.p1Back, 'S5');
-  const endAt = endLf(wEnd(39), 'S5', 8); // "বসা" শেষ
+  const endAt = endLf(wEnd(44), 'S5', 8); // "বসা" শেষ
   const compass = progressBetween(frame, qiblaAt + 6, qiblaAt + 30);
 
   return (
@@ -214,7 +214,7 @@ export const Scene5: React.FC = () => {
 };
 
 /* ------------------------------------------------------------------ */
-/* ৭.৬ S6 — সুন্নাহ ২ (26.2–34.6s) • Layout A                            */
+/* ৭.৬ S6 — সুন্নাত ২ (26.2–34.6s) • Layout A                            */
 /* ------------------------------------------------------------------ */
 
 const ROW_W = 772;
@@ -289,7 +289,7 @@ const SubRow: React.FC<{
 
 /**
  * ২৬.২০s "দুই"        → NumberBadge ২
- * ২৭.৬০s "যথাসম্ভব"   → ২ক "বসার নিকটবর্তী হয়ে সতর ঢাকা" (কাপড়/ঢাকা আইকন)
+ * ২৭.৬০s "যথাসম্ভব"   → ২ক "বসার নিকটবর্তী হয়ে সতর খোলা" (কাপড়/ঢাকা আইকন)
  * ৩০.৮৭s "বসিয়া"     → ২খ "বসে প্রস্রাব-পায়খানা করা" (বসা মানুষ + টিক)
  * ৩২.৭৩s "দাঁড়িয়ে"   → ২গ "দাঁড়িয়ে প্রস্রাব না করা" (দাঁড়ানো মানুষ + লাল ক্রস)
  * তিনটি সারি জায়গা নির্দিষ্ট; একটার পর একটা যোগ হয়, আগেরগুলো থাকে।
@@ -298,7 +298,7 @@ export const Scene6: React.FC = () => {
   const aAt = lf(KEY_MS.p2aStart, 'S6') - 2;
   const bAt = lf(KEY_MS.p2bStart, 'S6') - 2;
   const cAt = lf(KEY_MS.p2cStart, 'S6') - 2;
-  const endAt = endLf(wEnd(57), 'S6', 10); // "করা" শেষ
+  const endAt = endLf(wEnd(62), 'S6', 10); // "করা" শেষ
 
   return (
     <AbsoluteFill>
@@ -321,7 +321,7 @@ export const Scene6: React.FC = () => {
           <div style={{position: 'relative', width: ROW_W, height: ROWS_TOTAL}}>
             <SubRow
               index={0}
-              text="বসার নিকটবর্তী হয়ে সতর ঢাকা"
+              text="বসার নিকটবর্তী হয়ে সতর খোলা"
               color={COLORS.sky}
               delay={aAt}
               exitAt={endAt}
@@ -351,7 +351,7 @@ export const Scene6: React.FC = () => {
 };
 
 /* ------------------------------------------------------------------ */
-/* ৭.৭ S7 — সুন্নাহ ৩ (34.5–42.6s) • Layout A                            */
+/* ৭.৭ S7 — সুন্নাত ৩ (34.5–42.6s) • Layout A                            */
 /* ------------------------------------------------------------------ */
 
 /** সতর্ক-ঢাল + "ঝিলিক" (গ্লো-ফ্ল্যাশ + ঘুরন্ত ছোট তারা) — `glintAt` এ ঝিলিক শুরু */
@@ -403,7 +403,7 @@ export const Scene7: React.FC = () => {
   const badgeAt = lf(KEY_MS.threeNumber, 'S7') - 2;
   const cardAt = lf(KEY_MS.p3Start, 'S7') - 2;
   const shieldAt = lf(KEY_MS.p3Care, 'S7') - 2;
-  const endAt = endLf(wEnd(69), 'S7', 10); // "থাকা" শেষ
+  const endAt = endLf(wEnd(75), 'S7', 10); // "থাকা" শেষ
   const drop = progressBetween(frame, cardAt + 6, cardAt + 30);
 
   return (
@@ -445,7 +445,7 @@ export const Scene7: React.FC = () => {
 };
 
 /* ------------------------------------------------------------------ */
-/* ৭.৮ S8 — সুন্নাহ ৪ (42.5–52.2s) • Layout B                            */
+/* ৭.৮ S8 — সুন্নাত ৪ (42.5–52.2s) • Layout B                            */
 /* ------------------------------------------------------------------ */
 
 const FLOW_A_W = 600;
@@ -547,10 +547,10 @@ const StepTag: React.FC<{value: number; color: string; delay: number; exitAt: nu
 /**
  * ৪২.৫০s "চার"            → NumberBadge ৪ (বাঁয়ে-ওপরে)
  * ৪৪.০০s "প্রস্রাব"        → শিরোনাম "প্রস্রাব-পায়খানা শেষে"
- * ৪৫.৫০s "ঢিলা"           → কার্ড A (ধাপ ১): ঢিলা-কুলুপ আইকন আঁকা
+ * ৪৫.৫০s "ঢিলা"           → কার্ড A (ধাপ ১): ঢিলা-কুলুখ আইকন আঁকা
  * ৪৭.০০s "পানি"           → কার্ড B (ধাপ ২): পানির ফোঁটা
  * ৪৮.০০s "আগে"            → তীর A→B আঁকা + ধাপ-ব্যাজ ১ ও ২ (প্রথমে ঢিলা, পরে পানি)
- * ৪৮.৫০s "ঢিলা কুলুপ"     → A কার্ডের গ্লো বাড়ে
+ * ৪৮.৫০s "ঢিলা কুলুখ"     → A কার্ডের গ্লো বাড়ে
  * ৪৯.৫০s "অথবা"           → A এর ভেতরে "অথবা" ব্যাজ পপ (ঢিলা সরে বাঁয়ে যায়)
  * ৫০.০০s "টয়লেট"          → টয়লেট পেপার আইকন + লেখা
  * ৫১.৯৬s "করা" শেষ        → প্রস্থান (ভিডিও ফুল-স্ক্রিনে ফেরা শুরু ≈ ৫১.৮s)
@@ -560,13 +560,13 @@ export const Scene8: React.FC = () => {
   const area = LAYOUT_B.infoArea;
   const badgeAt = 0; // "চার" — সিনের শুরু থেকেই
   const titleAt = lf(KEY_MS.p4aStart, 'S8') - 2;
-  const clodAt = lf(wStart(76), 'S8') - 2; // "ঢিলা"
+  const clodAt = lf(wStart(82), 'S8') - 2; // "ঢিলা"
   const waterAt = lf(KEY_MS.p4Water, 'S8') - 2; // "পানি"
   const aagheAt = lf(KEY_MS.p4bStart, 'S8'); // "আগে"
-  const clodAgainAt = lf(wStart(82), 'S8'); // "ঢিলা কুলুপ" (২য় বার)
+  const clodAgainAt = lf(wStart(86), 'S8'); // "ঢিলা কুলুখ" (২য় বার)
   const orAt = lf(KEY_MS.p4Or, 'S8') - 2; // "অথবা"
-  const tissueAt = lf(wStart(85), 'S8') - 2; // "টয়লেট"
-  const endAt = endLf(wEnd(88), 'S8', 10); // "করা" শেষ
+  const tissueAt = lf(wStart(88), 'S8') - 2; // "টয়লেট"
+  const endAt = endLf(wEnd(91), 'S8', 10); // "করা" শেষ
 
   const clodDraw = progressBetween(frame, clodAt + 6, clodAt + 28);
   const dropDraw = progressBetween(frame, waterAt + 6, waterAt + 28);
@@ -622,7 +622,7 @@ export const Scene8: React.FC = () => {
             boostAt={clodAgainAt}
           >
             <StepTag value={1} color={COLORS.gold} delay={aagheAt} exitAt={endAt} />
-            <FlowItem label="ঢিলা-কুলুপ">
+            <FlowItem label="ঢিলা-কুলুখ">
               <ClodIcon size={145} draw={clodDraw} />
             </FlowItem>
             <div

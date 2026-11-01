@@ -34,10 +34,10 @@ import {
 /**
  * Scenes3.tsx — ধাপ ৭ এর ৩য় ব্যাচ: S9–S12 (mdmk02.md ৭.৯–৭.১২)
  *
- *  ৭.৯  S9  সারাংশ      (ফ্রেম 1345–1530)  Layout A — "এই ৪টি সুন্নাহ" চেকলিস্ট (প্রতি ১.২s এ একটা টিক)
+ *  ৭.৯  S9  সারাংশ      (ফ্রেম 1345–1530)  Layout A — "এই ৪টি সুন্নাত" চেকলিস্ট (প্রতি ১.২s এ একটা টিক)
  *  ৭.১০ S10 বাকি ৮টি    (ফ্রেম 1545–1710)  Layout B — ১৬ ঘর: ৮টি সবুজ ✓ + ৮টি বাকি, কাউন্টার "৮ / ১৬"
- *  ৭.১১ S11 CTA         (ফ্রেম 1720–1910)  Layout A — "পর্ব আকারে বাকি ৮টি সুন্নাহ" + MDMK বাটন + ঘণ্টা + বিদায়ী-ফেড
- *  ৭.১২ S12 বিদায়       (ফ্রেম 1945–2000)  Layout A — "ওয়া রহমাতুল্লাহি ওয়া বারাকাতুহু" + শেষ ০.৫s ডার্ক ফেড
+ *  ৭.১১ S11 CTA         (ফ্রেম 1720–1910)  Layout A — "পর্ব আকারে বাকি ৮টি সুন্নাত" + MDMK বাটন + ঘণ্টা + বিদায়ী-ফেড
+ *  ৭.১২ S12 বিদায়       (ফ্রেম 1945–2000)  Layout A — "ওয়া রাহমাতুল্লাহি ওয়া বারাকাতুহু" + শেষ ০.৫s ডার্ক ফেড
  *
  * সব সময় **লোকাল ফ্রেমে** (সিনের শুরু = ০)। `lf(ms, id)` = JSON এর মিলিসেকেন্ড → ঐ সিনের লোকাল ফ্রেম।
  * গ্রাফিকের কোনো লেখা বক্তার কথার বাইরে নয়; নতুন কোনো তথ্য/হুকুম যোগ হয়নি।
@@ -126,7 +126,7 @@ const Chip: React.FC<{text: string; color: string; fontSize?: number}> = ({
   </div>
 );
 
-/** সুন্নাহ-ক্রমের রঙ (Scenes2 এর ব্যাজ-বরাদ্দ): ১ = গোল্ড • ২ = স্কাই • ৩ = ভায়োলেট • ৪ = লাইম */
+/** সুন্নাত-ক্রমের রঙ (Scenes2 এর ব্যাজ-বরাদ্দ): ১ = গোল্ড • ২ = স্কাই • ৩ = ভায়োলেট • ৪ = লাইম */
 const SUNNAH_COLORS = [COLORS.gold, COLORS.sky, COLORS.violet, COLORS.lime] as const;
 
 /* ------------------------------------------------------------------ */
@@ -138,7 +138,7 @@ const SUMMARY_ITEMS: readonly {text: string; color: string}[] = [
   // ℹ️ প্ল্যানে "কেবলামুখী/পিঠ নয়" ছিল — "কেবলামুখী" শব্দে উল্টো অর্থ (কেবলার দিকে মুখ করা ঠিক) বোঝার ঝুঁকি আছে।
   //    তাই বক্তার নিজের কথার কাছাকাছি: "কেবলার দিকে মুখ/পিঠ নয়"।
   {text: 'কেবলার দিকে মুখ/পিঠ নয়', color: SUNNAH_COLORS[0]},
-  {text: 'সতর ঢাকা ও বসে করা', color: SUNNAH_COLORS[1]},
+  {text: 'সতর খোলা ও বসে করা', color: SUNNAH_COLORS[1]},
   {text: 'নাপাক থেকে বাঁচা', color: SUNNAH_COLORS[2]},
   {text: 'ঢিলা/টিস্যুর পর পানি', color: SUNNAH_COLORS[3]},
 ];
@@ -247,22 +247,22 @@ const SummaryRow: React.FC<{
 };
 
 /**
- * ৫৪.০০s "এই চারটি হলো"     → শিরোনাম "এই ৪টি সুন্নাহ" (বাঁ কলামে)
- * ৫৬.০০s "ইস্তেঞ্জার"       → শিরোনাম বদলে "ইস্তেঞ্জা সুন্নাহ"
+ * ৫৪.৬১s "এই ৪টি হলো"       → শিরোনাম "এই ৪টি সুন্নাত" (বাঁ কলামে)
+ * ৫৭.০৩s "ইস্তেঞ্জার"       → শিরোনাম বদলে "ইস্তেঞ্জার সুন্নাত"
  * ডানে ৪ সারি: প্রতি ১.২s (৩০ ফ্রেম) এ একটা ঢোকে ও টিক পড়ে (১ম ≈ "চারটি")
- * ৫৯.৩s "অন্যতম" এর কাছে শেষ টিক; সব সারি গ্লো-স্পন্দন; "সুন্নাহ" শেষের আগেই সব প্রস্থান
+ * ৫৯.৩s "অন্যতম" এর কাছে শেষ টিক; সব সারি গ্লো-স্পন্দন; "সুন্নাত" শেষের আগেই সব প্রস্থান
  */
 export const Scene9: React.FC = () => {
   const frame = useCurrentFrame();
-  const firstAt = lf(wStart(90), 'S9') + 3; // "চারটি"
+  const firstAt = lf(wStart(93), 'S9') + 3; // "চারটি"
   const interval = 30; // ১.২s
   const rowAt = (i: number): number => firstAt + i * interval; // ২১, ৫১, ৮১, ১১১
   const tickAt = (i: number): number => rowAt(i) + 8;
   const allDoneAt = tickAt(3) + 10;
-  const titleAAt = Math.max(0, lf(wStart(89), 'S9') - 2); // "এই"
-  const titleAOut = lf(wStart(92), 'S9') - 11; // শিরোনাম-ক সরে (৮ ফ্রেমে অদৃশ্য)
-  const titleBAt = lf(wStart(92), 'S9') - 2; // "ইস্তেঞ্জার"
-  const endAt = endLf(wEnd(100), 'S9', 8); // "সুন্নাহ" শেষ
+  const titleAAt = Math.max(0, lf(wStart(92), 'S9') - 2); // "এই"
+  const titleAOut = lf(wStart(95), 'S9') - 11; // শিরোনাম-ক সরে (৮ ফ্রেমে অদৃশ্য)
+  const titleBAt = lf(wStart(95), 'S9') - 2; // "ইস্তেঞ্জার"
+  const endAt = endLf(wEnd(101), 'S9', 8); // "সুন্নাত" শেষ
   const rowsLeft = SUM_LEFT_W + SUM_GAP;
   // বাঁ কলাম ও ডান তালিকার মাঝের সরু দাগ — আঁকা হয়
   const rule = easeOutCubic(progressBetween(frame, 4, 24));
@@ -306,7 +306,7 @@ export const Scene9: React.FC = () => {
           >
             <div style={{position: 'absolute', left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
               <AnimatedTitle
-                text={`এই ${toBn(4)}টি সুন্নাহ`}
+                text={`এই ${toBn(4)}টি সুন্নাত`}
                 fontSize={76}
                 gradient={[COLORS.sky, COLORS.teal]}
                 underlineColor={COLORS.sky}
@@ -436,10 +436,11 @@ const RemainBracket: React.FC<{at: number; exitAt: number}> = ({at, exitAt}) => 
 };
 
 /**
- * ৬২.০০s "ষোলোটি"        → শিরোনাম "১৬টি সুন্নাহ" + ১৬ ঘরের গ্রিড (নিষ্ক্রিয়)
- * ৬৩.৬৪s "অন্যতম চারটি"  → ৮ ঘর সবুজ ✓ (০–৭) + কাউন্টার "৮ / ১৬" গোনে (বাঁয়ে)
- * ৬৫.২৭s "বাকি"         → ৮ ঘর ধূসর-পালস (৮–১৫) + চিপ "বাকি ৮টি" (ডানে)
- * ৬৬.৩৬s "আর"/"আটটি"    → বাকি ৮ ঘর ঘিরে কোরাল ফ্রেম জ্বলে; কাউন্টারের সংখ্যা ফোলে
+ * ৬২.২৩s "ইস্তেঞ্জার"     → সিন শুরু (ভিডিও ছোট কার্ডে নামে)
+ * ৬২.৭৩s "১৬টি"          → শিরোনাম "১৬টি সুন্নাত" + ১৬ ঘরের গ্রিড (নিষ্ক্রিয়)
+ * ৬৪.৪৩s "অন্যতম ৪টি"    → ৮ ঘর সবুজ ✓ (০–৭) + কাউন্টার "৮ / ১৬" গোনে (বাঁয়ে)
+ * ৬৬.৭০s "বাকি"         → ৮ ঘর ধূসর-পালস (৮–১৫) + চিপ "বাকি ৮টি" (ডানে)
+ * ৬৭.৬৯s "আর"/"৮টি"      → বাকি ৮ ঘর ঘিরে কোরাল ফ্রেম জ্বলে; কাউন্টারের সংখ্যা ফোলে
  * ভিডিও এই সিনে ছোট কার্ডে (MainVideo এর Layout B); কার্ড ওপরের এলাকা (১৯২–৮০৬) ছেড়ে দেয়।
  */
 export const Scene10: React.FC = () => {
@@ -450,11 +451,11 @@ export const Scene10: React.FC = () => {
   const gridLeft = Math.round((WIDTH - G_SIZE) / 2);
 
   const sixteenAt = lf(KEY_MS.remainStart, 'S10');
-  const knownAt = lf(wStart(104), 'S10') - 2; // "অন্যতম"
-  const remainAt = lf(wStart(107), 'S10') - 2; // "বাকি"
-  const emphasisAt = lf(wStart(109), 'S10') - 2; // "আর"
-  const eightWordAt = lf(wStart(110), 'S10'); // "আটটি"
-  const endAt = endLf(wEnd(111), 'S10', 4); // "সুন্নাহ" শেষ
+  const knownAt = lf(wStart(106), 'S10') - 2; // "অন্যতম"
+  const remainAt = lf(wStart(109), 'S10') - 2; // "বাকি"
+  const emphasisAt = lf(wStart(111), 'S10') - 2; // "আর"
+  const eightWordAt = lf(wStart(112), 'S10'); // "আটটি"
+  const endAt = endLf(wEnd(113), 'S10', 4); // "সুন্নাত" শেষ
 
   const rowY = (row: number): number => gridTop + row * (G_CELL + G_GAP) + G_CELL / 2;
   const chipH = 80;
@@ -474,10 +475,10 @@ export const Scene10: React.FC = () => {
         />
       </Fade>
 
-      {/* শিরোনাম: "১৬টি সুন্নাহ" */}
+      {/* শিরোনাম: "১৬টি সুন্নাত" */}
       <Zone top={headerTop} height={headerH}>
         <AnimatedTitle
-          text={`${toBn(16)}টি সুন্নাহ`}
+          text={`${toBn(16)}টি সুন্নাত`}
           fontSize={82}
           gradient={[COLORS.sky, COLORS.teal]}
           underlineColor={COLORS.sky}
@@ -569,14 +570,14 @@ const BurstRings: React.FC<{at: number; cx: number; cy: number}> = ({at, cx, cy}
 
 /**
  * ৬৯.০০s "পর্ব আকারে"        → লেখা "পর্ব আকারে" (শব্দ ধরে)
- * ৭০.০৮s "বাকি আটটি সুন্নাহ"  → দ্বিতীয় লাইন "বাকি ৮টি সুন্নাহ" (গ্রেডিয়েন্ট + আন্ডারলাইন)
+ * ৭০.০৮s "বাকি আটটি সুন্নাত"  → দ্বিতীয় লাইন "বাকি ৮টি সুন্নাত" (গ্রেডিয়েন্ট + আন্ডারলাইন)
  * ৭২.৭৭s "MDMK"            → দুই লাইন সরে; বড় "MDMK" বাটন পপ + রিং-বার্স্ট + ঘণ্টা দোলে + "সাথে থাকুন"
  * ৭৪.৯২s সালাম (১ম অংশ)    → শান্ত বিদায়ী-ফেড (ধীরে মিলায়, সামান্য ওপরে ওঠে); কণা ধীরে ঝিমিয়ে যায়
  */
 export const Scene11: React.FC = () => {
   const partsAt = lf(KEY_MS.partsStart, 'S11') - 2;
-  const baakiAt = lf(wStart(114), 'S11') - 2; // "বাকি"
-  const phase1Out = lf(wEnd(118), 'S11') - 8; // "জন্য" শেষ
+  const baakiAt = lf(wStart(117), 'S11') - 2; // "বাকি"
+  const phase1Out = lf(wEnd(121), 'S11') - 8; // "জন্য" শেষ
   const mdmkAt = lf(KEY_MS.mdmkWord, 'S11') - 2; // "MDMK"
   const calmAt = lf(KEY_MS.salamEndStart, 'S11'); // বিদায়ী-ফেড শুরু
   const calmDur = 28;
@@ -603,7 +604,7 @@ export const Scene11: React.FC = () => {
 
       <BurstRings at={mdmkAt + 2} cx={WIDTH / 2} cy={midY - 20} />
 
-      {/* ধাপ ১: "পর্ব আকারে / বাকি ৮টি সুন্নাহ" */}
+      {/* ধাপ ১: "পর্ব আকারে / বাকি ৮টি সুন্নাত" */}
       <Zone top={INFO.from} height={INFO_H}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <AnimatedTitle
@@ -617,7 +618,7 @@ export const Scene11: React.FC = () => {
             exitAt={phase1Out}
           />
           <AnimatedTitle
-            text={`বাকি ${toBn(8)}টি সুন্নাহ`}
+            text={`বাকি ${toBn(8)}টি সুন্নাত`}
             fontSize={96}
             gradient={[COLORS.coral, COLORS.gold]}
             underlineColor={COLORS.coral}
@@ -644,15 +645,15 @@ export const Scene11: React.FC = () => {
 /* ------------------------------------------------------------------ */
 
 /**
- * ৭৮.০০s "ওয়া"          → শিরোনাম ফুটতে শুরু (ওয়া • রহমাতুল্লাহি • ওয়া • বারাকাতুহু — JSON ≈ ৩০০–৩৫০ms ব্যবধান)
+ * ৭৮.০০s "ওয়া"          → শিরোনাম ফুটতে শুরু (ওয়া • রাহমাতুল্লাহি • ওয়া • বারাকাতুহু — JSON ≈ ৩০০–৩৫০ms ব্যবধান)
  * ৭৯.৪৭s শেষ শব্দ শেষ    → গ্রাফিক ধীরে মিলায়
  * শেষ ০.৫s (১২ ফ্রেম)   → ভিডিও-লেয়ারের ওপর হালকা ডার্ক (নেভি) ফেড; ক্যাপশন ও HUD এর নিচে, তাই লেখা পড়া যায়
  */
 export const Scene12: React.FC = () => {
   const frame = useCurrentFrame();
   const sceneEnd = getScene('S12').to - getScene('S12').from; // ৫৫
-  const titleAt = Math.max(0, lf(wStart(125), 'S12') - 2); // "ওয়া"
-  const titleOut = Math.min(lf(wEnd(128), 'S12') - 2, sceneEnd - 18); // শেষ শব্দ শেষ
+  const titleAt = Math.max(0, lf(wStart(128), 'S12') - 2); // "ওয়া"
+  const titleOut = Math.min(lf(wEnd(131), 'S12') - 2, sceneEnd - 18); // শেষ শব্দ শেষ
   const darkFrom = sceneEnd - 12; // শেষ ০.৪৮s
   const dark = easeInOutCubic(progressBetween(frame, darkFrom, sceneEnd - 1));
 
@@ -677,12 +678,12 @@ export const Scene12: React.FC = () => {
 
       <Zone top={INFO.from} height={INFO_H}>
         <AnimatedTitle
-          text="ওয়া রহমাতুল্লাহি ওয়া বারাকাতুহু"
+          text="ওয়া রাহমাতুল্লাহি ওয়া বারাকাতুহু"
           fontSize={92}
           gradient={[COLORS.gold, COLORS.teal]}
           underlineColor={COLORS.gold}
           delay={titleAt}
-          stagger={Math.max(5, Math.round(msToFrame(wStart(128) - wStart(125)) / 3))}
+          stagger={Math.max(5, Math.round(msToFrame(wStart(131) - wStart(128)) / 3))}
           maxWidth={960}
           exitAt={titleOut}
         />

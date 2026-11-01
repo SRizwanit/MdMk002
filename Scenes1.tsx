@@ -119,17 +119,20 @@ const Chip: React.FC<{text: string; color: string; fontSize?: number}> = ({
 );
 
 /* ------------------------------------------------------------------ */
-/* ৭.১ S1 — সালাম (0–2.4s)                                              */
+/* ৭.১ S1 — সালাম (0.6–4.2s)                                           */
 /* ------------------------------------------------------------------ */
 
 /**
- * "আসসালামু আলাইকুম" বড় টাইটেল — শব্দ ধরে ফুটে ওঠে (আসসালামু: 0ms, আলাইকুম: 750ms),
- * চারপাশে স্বর্ণালী তারা-কণা। ক্যাপশন আলাদা (Captions.tsx) চলছে।
+ * পুরো সালাম "আসসালামু আলাইকুম ওয়া রাহমাতুল্লাহি ওয়া বারাকাতুহু" (নতুন ট্রান্সক্রিপ্ট; আগে শুধু প্রথম দুই শব্দ ছিল)।
+ * বড় টাইটেল (আসসালামু • আলাইকুম) শব্দ ধরে ফুটে ওঠে; নিচে ছোট দ্বিতীয় লাইন (ওয়া • রাহমাতুল্লাহি • ওয়া • বারাকাতুহু)
+ * বক্তার আসল শব্দ-সময়ে ফোটে। চারপাশে স্বর্ণালী তারা-কণা। ক্যাপশন আলাদা (Captions.tsx) চলছে।
  */
 export const Scene1: React.FC = () => {
   const salamAt = lf(wStart(0), 'S1'); // "আসসালামু" শুরু
   const salamGap = msToFrame(wStart(1) - wStart(0)); // দুই শব্দের ব্যবধান (ফ্রেম)
-  const exitAt = lf(wEnd(1), 'S1') - 6; // "আলাইকুম" শেষের একটু আগে প্রস্থান
+  const blessAt = lf(wStart(2), 'S1'); // "ওয়া" (রাহমাতুল্লাহি লাইন শুরু)
+  const blessGap = Math.max(5, Math.round(msToFrame(wStart(5) - wStart(2)) / 3)); // ওয়া→রাহমাতুল্লাহি→ওয়া→বারাকাতুহু
+  const exitAt = endLf(wEnd(5), 'S1', 4); // "বারাকাতুহু" শেষে প্রস্থান
   return (
     <AbsoluteFill>
       <Fade outAt={exitAt + 4}>
@@ -147,13 +150,24 @@ export const Scene1: React.FC = () => {
       <Zone top={INFO.from} height={INFO_H}>
         <AnimatedTitle
           text="আসসালামু আলাইকুম"
-          fontSize={98}
+          fontSize={88}
           gradient={[COLORS.gold, COLORS.teal]}
           underlineColor={COLORS.gold}
           delay={salamAt - 1}
           stagger={salamGap}
           maxWidth={980}
           exitAt={exitAt}
+        />
+        <AnimatedTitle
+          text="ওয়া রাহমাতুল্লাহি ওয়া বারাকাতুহু"
+          fontSize={56}
+          gradient={[COLORS.teal, COLORS.gold]}
+          underline={false}
+          delay={blessAt - 1}
+          stagger={blessGap}
+          maxWidth={980}
+          exitAt={exitAt}
+          style={{marginTop: 6}}
         />
       </Zone>
     </AbsoluteFill>
@@ -167,16 +181,16 @@ export const Scene1: React.FC = () => {
 /**
  * ধাপ ১ (৩.০–৫.১s "প্রিয় দর্শক শ্রোতা"): শিরোনাম।
  * ধাপ ২ (৫.১s "গত ভিডিওতে" থেকে): ProgressRing ০→৪/১৬ ভরে; "আমরা জেনেছি" (৬.৬–৭.৯s) এ
- * পাশে কার্ড "গত ভিডিওতে • ৪টি সুন্নাহ জানা" + টিক আঁকা।
+ * পাশে কার্ড "গত ভিডিওতে • ৪টি সুন্নাত জানা" + টিক আঁকা।
  */
 export const Scene2: React.FC = () => {
   const frame = useCurrentFrame();
-  const titleAt = Math.max(0, lf(wStart(2), 'S2') - 1); // "প্রিয়"
-  const titleStagger = Math.max(6, Math.round(msToFrame(wStart(4) - wStart(2)) / 2)); // প্রিয়→দর্শক→শ্রোতা ব্যবধান
-  const titleExit = lf(wEnd(4), 'S2') - 1; // "শ্রোতা" শেষে শিরোনাম প্রস্থান
-  const ringAt = lf(wStart(6), 'S2'); // "ভিডিওতে" থেকে রিং ভরে (শিরোনাম সরার পরে)
-  const cardAt = lf(wStart(7), 'S2') - 4; // "আমরা" — কার্ড একটু আগে
-  const endAt = endLf(wEnd(8), 'S2', 2); // "জেনেছি" শেষ
+  const titleAt = Math.max(0, lf(wStart(6), 'S2') - 1); // "প্রিয়"
+  const titleStagger = Math.max(6, Math.round(msToFrame(wStart(8) - wStart(6)) / 2)); // প্রিয়→দর্শক→শ্রোতা ব্যবধান
+  const titleExit = lf(wEnd(8), 'S2') - 1; // "শ্রোতা" শেষে শিরোনাম প্রস্থান
+  const ringAt = lf(wStart(10), 'S2'); // "ভিডিওতে" থেকে রিং ভরে (শিরোনাম সরার পরে)
+  const cardAt = lf(wStart(11), 'S2') - 4; // "আমরা" — কার্ড একটু আগে
+  const endAt = endLf(wEnd(12), 'S2', 2); // "জেনেছি" শেষ
   const tick = progressBetween(frame, cardAt + 12, cardAt + 28);
 
   return (
@@ -219,12 +233,12 @@ export const Scene2: React.FC = () => {
             delay={ringAt}
             duration={40}
             exitAt={endAt}
-            label="সুন্নাহ"
+            label="সুন্নাত"
           />
           <InfoCard
             width={600}
             title="গত ভিডিওতে"
-            subtitle="৪টি সুন্নাহ জানা"
+            subtitle="৪টি সুন্নাত জানা"
             color={COLORS.lime}
             titleSize={52}
             subtitleSize={38}
@@ -240,7 +254,7 @@ export const Scene2: React.FC = () => {
 };
 
 /* ------------------------------------------------------------------ */
-/* ৭.৩ S3 — আজকের বিষয় (8.8–17.6s) • Layout B                          */
+/* ৭.৩ S3 — আজকের বিষয় (9.1–17.6s) • Layout B                          */
 /* ------------------------------------------------------------------ */
 
 const GRID_CELL = 96;
@@ -248,10 +262,11 @@ const GRID_GAP = 14;
 const GRID_SIZE = 4 * GRID_CELL + 3 * GRID_GAP; // ৪২৬
 
 /**
- * ৯.০s "ষোলোটি সুন্নাহ" → শিরোনাম "১৬টি সুন্নাহ" + ১৬ ঘরের গ্রিড (ধূসর, বাকি)
- * ১১.০s "চারটি জেনেছি" → প্রথম ৪ ঘর সবুজ ✓ + চিপ "৪টি জেনেছি"
- * ১৩.০s "পরবর্তী চারটি জানবো" → পরের ৪ ঘর গোল্ড-পালস + চিপ "আজকে ৪টি"
- * ১৬.০s "ইস্তেঞ্জার সুন্নাহ" → বড় শিরোনাম (গ্রেডিয়েন্ট + আন্ডারলাইন)
+ * ৯.২৭s "ইস্তেঞ্জার সুন্নাত" → সিন শুরু (ভিডিও ছোট কার্ডে নামে)
+ * ১০.৩৮s "১৬টি" → শিরোনাম "১৬টি সুন্নাত" + ১৬ ঘরের গ্রিড (ধূসর, বাকি)
+ * ১১.৯৪s "৪টি জেনেছি" → প্রথম ৪ ঘর সবুজ ✓ + চিপ "৪টি জেনেছি"
+ * ১৩.৭২s "পরবর্তী ৪টি জানবো" → পরের ৪ ঘর গোল্ড-পালস + চিপ "আজকে ৪টি"
+ * ১৬.৩৯s "ইস্তেঞ্জার সুন্নাত" → বড় শিরোনাম (গ্রেডিয়েন্ট + আন্ডারলাইন)
  * ভিডিও এই সিনে ছোট কার্ডে (MainVideo এর Layout B); কার্ড ওপরের এলাকা ছেড়ে দেয়।
  */
 export const Scene3: React.FC = () => {
@@ -261,13 +276,13 @@ export const Scene3: React.FC = () => {
   const gridTop = area.from + headerH;
   const gridLeft = Math.round((WIDTH - GRID_SIZE) / 2);
 
-  const sixteenAt = lf(wStart(9), 'S3'); // "ষোলোটি"
-  const knownAt = lf(wStart(13), 'S3'); // "চারটি জেনেছি"
-  const todayAt = lf(wStart(17), 'S3'); // "পরবর্তী চারটি জানবো"
-  const remainAt = lf(wStart(11), 'S3'); // "এর" → ধূসর ৮ ঘর
-  const titleAt = lf(wStart(23), 'S3'); // "ইস্তেঞ্জার"
-  // "সুন্নাহ" শেষের পরে নীরবতা (≈১.৮s) জুড়ে শিরোনাম থাকে; পরের সিন শুরুর আগেই প্রস্থান
-  const endAt = Math.min(lf(wEnd(24), 'S3') + 24, sceneLen('S3') - 9);
+  const sixteenAt = lf(wStart(15), 'S3'); // "১৬টি"
+  const knownAt = lf(wStart(18), 'S3'); // "৪টি জেনেছি"
+  const todayAt = lf(wStart(22), 'S3'); // "পরবর্তী ৪টি জানবো"
+  const remainAt = lf(wStart(16), 'S3'); // "এর" → ধূসর ৮ ঘর
+  const titleAt = lf(wStart(28), 'S3'); // "ইস্তেঞ্জার"
+  // "সুন্নাত" শেষের পরে নীরবতা (≈১.৮s) জুড়ে শিরোনাম থাকে; পরের সিন শুরুর আগেই প্রস্থান
+  const endAt = Math.min(lf(wEnd(29), 'S3') + 24, sceneLen('S3') - 9);
 
   const rowY = (row: number): number => gridTop + row * (GRID_CELL + GRID_GAP) + GRID_CELL / 2;
   const chipH = 70;
@@ -287,10 +302,10 @@ export const Scene3: React.FC = () => {
         />
       </Fade>
 
-      {/* শিরোনাম ১: "১৬টি সুন্নাহ" */}
+      {/* শিরোনাম ১: "১৬টি সুন্নাত" */}
       <Zone top={headerTop} height={headerH}>
         <AnimatedTitle
-          text={`${toBn(16)}টি সুন্নাহ`}
+          text={`${toBn(16)}টি সুন্নাত`}
           fontSize={82}
           gradient={[COLORS.sky, COLORS.teal]}
           underlineColor={COLORS.sky}
@@ -301,7 +316,7 @@ export const Scene3: React.FC = () => {
         />
       </Zone>
 
-      {/* শিরোনাম ২: "ইস্তেঞ্জা সুন্নাহ" (একই জায়গায়) */}
+      {/* শিরোনাম ২: "ইস্তেঞ্জার সুন্নাত" (একই জায়গায়) */}
       <Zone top={headerTop} height={headerH}>
         <AnimatedTitle
           text={TOPIC_TITLE}
@@ -450,12 +465,12 @@ const StepDots: React.FC<{delay: number; litAt: number; exitAt?: number}> = ({
 };
 
 /**
- * "পরবর্তী ৪টি সুন্নাহ" শিরোনাম + ৪টি ডট (১ম জ্বলছে)।
- * ১৯.৭৫s "এক নাম্বার" এ ডট ১ জ্বলে — পরের সিনে (S5) NumberBadge ১ ঢোকার প্রস্তুতি।
+ * "পরবর্তী ৪টি সুন্নাত" শিরোনাম + ৪টি ডট (১ম জ্বলছে)।
+ * ১৯.৭৫s "এক নম্বর" এ ডট ১ জ্বলে — পরের সিনে (S5) NumberBadge ১ ঢোকার প্রস্তুতি।
  */
 export const Scene4: React.FC = () => {
   const oneAt = lf(KEY_MS.oneNumber, 'S4'); // "এক"
-  const endAt = endLf(wEnd(30), 'S4', 2); // "হলো" শেষ
+  const endAt = endLf(wEnd(35), 'S4', 2); // "হলো" শেষ
   const titleH = 150;
 
   return (
@@ -475,7 +490,7 @@ export const Scene4: React.FC = () => {
 
       <Zone top={INFO.from - 8} height={titleH}>
         <AnimatedTitle
-          text="পরবর্তী ৪টি সুন্নাহ"
+          text="পরবর্তী ৪টি সুন্নাত"
           fontSize={84}
           gradient={[COLORS.sky, COLORS.teal]}
           underlineColor={COLORS.teal}
