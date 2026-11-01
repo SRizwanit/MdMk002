@@ -213,10 +213,11 @@ const SummaryRow: React.FC<{
       </div>
       <div
         style={{
-          flex: 1,
+          flex: '1 1 0',
+          minWidth: 0, // লম্বা লেখা টিককে ঠেলে সরাতে পারবে না — সব সারিতে টিক একই জায়গায়
           fontFamily: FONT_FAMILY,
           fontWeight: 700,
-          fontSize: 50,
+          fontSize: text.length > 20 ? 43 : 50, // লম্বা লাইন ছোট ফন্টে, যাতে এক লাইনে ঢোকে
           lineHeight: 1.3,
           paddingBottom: 4,
           color: COLORS.white,
@@ -228,6 +229,7 @@ const SummaryRow: React.FC<{
       <div
         style={{
           flex: '0 0 auto',
+          marginLeft: 'auto',
           width: chip,
           height: chip,
           borderRadius: '50%',
